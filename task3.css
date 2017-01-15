@@ -1,82 +1,68 @@
-html body div{
-    margin:0;
-    padding:0
-}
-#head{
-    height:132px;
-    position:relative;
-  }
+body{margin:0}
 img {
     max-width:100%;
     max-height:100%
 }
 .background {
-    max-width:640px;width:auto!important;
-    min-height:640px;height:auto!important;
-    z-index:1;
+    background-color:#68CDD5;
+    max-width:40em;width:auto!important;
+    min-height:80em;height:auto!important;
+    margin:0 auto;
+    z-index:0;
     overflow:auto;
 }
-.back{
-    position:absolute;
-    left:5.3125%;
-    top:1.6725%;
-    max-width:54px;width:auto!important;
-    max-height:54px;height:auto!important;
+.part_back{
+    margin:1.6725% 5.3125%;
+    width:auto;!important;
+    height:auto!important;
     z-index:1;
 }
-.title {
-    position:absolute;
-    left:30.78125%;
-    top:10.1232%;
-    max-width:181px;width:auto!important;
-    max-height:70px;height:auto!important;
+.part_title {
+    margin:10.1232% 30.78125%;
+    width:auto!important;
+    height:auto!important;
     z-index:1
 }
-.content{
-    max-font-size:1.875em;
+.part_content{
+    font-size:3vh;
     font-family:"Adobe Heiti Std";
     color:#FFFFFF;
     line-height:1.807;
-    position:absolute;
-    left:14.0625%;
-    top:27.2887%;
-    max-width:70.3125%;width:auto!important;
-    max-height:16.9014%;height:auto!important;
+    margin:20% 14.0625%;
+    max-width: 28.125em;width:auto!important;
+    height:auto!important;
     z-index:1;
 }
 .group{
-    position:absolute;
-    left:21.25%;
-    top:59.24296%;
-    max-width:84px;width:auto!important;
-    max-height:84px;height:auto!important;
+    margin:5% 0 5% 7.0625%;
+    padding-left:10%;
+    width:auto!important;
+    height:auto!important;
+    float:left;
     z-index:1;
 }
 .ptteng{
-    position:absolute;
-    left:67.65625%;
-    top:59.24296%;
-    max-width:84px;width:auto!important;
-    max-height:84px;height:auto!important;
+    margin:5% 7.0625% 5% 0;
+    padding-right:10%;
+    width:auto!important;
+    height:auto!important;
+    float:right;
     z-index:1;
 }
+
 .textgroup{
-    max-font-size:1.5em;font-size:inherit;
+    font-size:3vh;
     font-family:"Adobe Heiti Std";
     color:#FFFFFF;
     line-height:2.259;
-    position:absolute;
-    left:18.90625%;
-    top:68.66197%;
+    margin-left:-14%;
     z-index:1;
 }
 .textptteng {
-    max-font-size:1.5em;font-size:inherit;
+    font-size:3vh;
     font-family:"Adobe Heiti Std";
     color:#FFFFFF;
     line-height:2.259;
-    position:absolute;
-    left:66.40625%;
-    top:68.66197%;
+    margin-right:-14%;
     z-index:1;
 }
