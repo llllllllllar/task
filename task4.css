@@ -1,0 +1,45 @@
+html {
+    font-size: 16px;
+}
+.header {
+    position:fixed;
+    top: 0;
+    right:0;
+    left:0;
+    margin:0;
+    width:100%;
+    background-color: rgb(95, 192, 205);
+    overflow:hidden;
+}
+.text_close{
+    font-size:2rem;
+    font-family:"Adobe Heiti Std";
+    color:white;
+    text-align: left;
+    position:absolute;
+    left:3%;
+    top:5%;
+}
+.text_login{
+    font-size:2.25rem;
+    font-family:"Adobe Heiti Std";
+    color:white;
+    text-align:center;
+}
+.text_register{
+    font-size:2rem;
+    font-family:"Adobe Heiti Std";
+    color:white;
+    text-align: right;
+    position:absolute;
+    right:3%;
+    top:5%;
+}
+
+.user{
+    position:absolute;
+    top:12%;
+}
+.passcode{}
+.text_enter{}
+.text_passcodeforgot{}
