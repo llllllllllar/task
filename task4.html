@@ -7,24 +7,17 @@
     <title>task4</title>
   </head>
   <body>
-    <div class="header">
-      <div class="text_close">关闭</div>
-      <div class="text_register">注册</div>
-      <div class="text_login">登录</div>
-    </div>
-    <div class="user">
-      <form action="action_page.php">
-      <div class="account">
-        <img src="task4pic\iphone.png">
-      <input type="text" value="请输入手机号码" />
+      <div class="header">
+        <div class="text_close">关闭</div>
+        <div class="text_register">注册</div>
+        <div class="text_login">登录</div>
       </div>
-        <div class="passcode">
-          <input type="text" name="lastname" value="请输入密码">
-        </div>
-        <div class="login">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-    </div>
+        <form class="user">
+          <img src="task4pic\iphone.png" class="account">
+          <input type="text" placeholder="请输入手机号码" class="accountinput" />
+          <img src="task4pic\locked.png" class="passcode">
+          <input type="text" placeholder="请输入密码" class="pswinput">
+          <button type="button" class="enter">登录</button>
+        </form>
   </body>
 </html>
