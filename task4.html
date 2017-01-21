@@ -7,17 +7,25 @@
     <title>task4</title>
   </head>
   <body>
+    <div id="main">
       <div class="header">
         <div class="text_close">关闭</div>
         <div class="text_register">注册</div>
         <div class="text_login">登录</div>
       </div>
         <form class="user">
-          <img src="task4pic\iphone.png" class="account">
-          <input type="text" placeholder="请输入手机号码" class="accountinput" />
-          <img src="task4pic\locked.png" class="passcode">
-          <input type="text" placeholder="请输入密码" class="pswinput">
-          <button type="button" class="enter">登录</button>
+          <ul>
+            <li><label><img src="task4pic\account.png"></label>
+            <input type="text" placeholder="请输入手机号码" class="account" />
+            </li>
+            <li>
+            <label><img src="task4pic\psw.png"></label>
+            <input type="text" placeholder="请输入密码" class="password">
+            </li>
+           <li><button type="button" class="enter">登录</button></li>
+            <li><a herf=" " class="pswforgot">忘记密码？</a></li>
+          </ul>
         </form>
+    </div>
   </body>
 </html>

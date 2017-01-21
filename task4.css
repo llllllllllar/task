@@ -1,12 +1,20 @@
-html body {
-    font-size: 16px;
+@charset "UTF-8";
+html{
+    font-size: 16px;;
     margin:0;padding:0;
+}
+body{
+    margin:0;
+}
+#main{
+    max-width:720px;width:100%;
+    margin:0 auto;
 }
 .header {
     position:fixed;
     top: 0;
     width:100%;
-    background-color: rgb(95, 192, 205);
+    background-color:rgb(95, 192, 205);
     overflow:hidden;
 }
 .text_close{
@@ -34,28 +42,33 @@ html body {
     top:5%;
 }
 .user{
-    position:fixed;
-    top:11%;
+    position:absolute;
+    top: 5rem;;
     width:100%;
     background-color:white;
     overflow:hidden;
 }
+ul{
+    list-style-type: none;
+    margin:0;padding:0;
+}
+label{
+   margin:1rem 2rem;
+}
+.accountpic{
+    position: absolute;
+    top:1rem;
+}
 .account{
-    font-family:"Adobe Heiti Std";
-    width:auto;
-    position:absolute;
-    left:4.5%;
-    top:5%;
+     font-family:"Adobe Heiti Std";
+     margin:1rem 2rem;
+ }
+.pswpic{
+     margin:1rem 2rem;
 }
-.accountinput{
-    
-}
-.passcode{
+.password{
     font-family:"Adobe Heiti Std";
-    width:auto;
-    position:absolute;
-    left:4.5%;
-    top:10%;
+    margin:1rem 2rem;
 }
 .enter{
     width:100%;
@@ -63,8 +76,25 @@ html body {
     font-family:"Adobe Heiti Std";
     color: white;
     text-align: center;
-    font-size: 2.25rem;
+    font-size:2rem;
 }
-.text_passcodeforgot{}
-
+a:link {
+    color:rgb(95, 192, 205);
+    text-decoration: none;}
+a:visited {
+    color:purple
+    text-decoration: none;}
+a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+.pswforgot{
+    font-size:2rem;
+    font-family:"Adobe Heiti Std";
+    color:rgb(95, 192, 205);
+    text-align: right;
+}
 
