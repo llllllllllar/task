@@ -1,14 +1,14 @@
 @charset "UTF-8";
 html{
-    font-size: 16px;;
+    font-size: 12px;;
     margin:0;padding:0;
 }
 body{
     margin:0;
 }
-#main{
-    max-width:720px;width:100%;
-    margin:0 auto;
+.main{
+    width:100%;
+    margin:0;padding:0;
 }
 .header {
     position:fixed;
@@ -41,35 +41,27 @@ body{
     right:3%;
     top:5%;
 }
-.user{
-    position:absolute;
-    top: 5rem;;
+form ul{
     width:100%;
     background-color:white;
     overflow:hidden;
-}
-ul{
     list-style-type: none;
-    margin:0;padding:0;
+    margin-top:5rem;padding:0;
+    vertical-align: middle;
 }
-label{
-   margin:1rem 2rem;
+.pic{
+    margin:1% 4%;
+    float:left;
+    clear:both;
 }
-.accountpic{
-    position: absolute;
-    top:1rem;
-}
-.account{
+.inputstlye{
      font-family:"Adobe Heiti Std";
-     margin:1rem 2rem;
+     font-size:2rem;
+     margin:1% 4%;
+     border: none;
+     clear:both;
+     width:65%;
  }
-.pswpic{
-     margin:1rem 2rem;
-}
-.password{
-    font-family:"Adobe Heiti Std";
-    margin:1rem 2rem;
-}
 .enter{
     width:100%;
     background-color: rgb(95, 192, 205);
@@ -77,12 +69,13 @@ label{
     color: white;
     text-align: center;
     font-size:2rem;
+    border:0;
 }
 a:link {
     color:rgb(95, 192, 205);
     text-decoration: none;}
 a:visited {
-    color:purple
+    color:purple;
     text-decoration: none;}
 a:hover {
     color: yellowgreen;
@@ -95,6 +88,5 @@ a:active{
     font-size:2rem;
     font-family:"Adobe Heiti Std";
     color:rgb(95, 192, 205);
-    text-align: right;
+    float:right;
 }
-
