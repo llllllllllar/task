@@ -1,74 +1,91 @@
 @charset "UTF-8";
-html{
-    font-size: 12px;;
+*{
     margin:0;padding:0;
-}
-body{
-    margin:0;
+    font-size:12px;
 }
 .main{
     width:100%;
-    margin:0;padding:0;
 }
 .header {
     position:fixed;
-    top: 0;
+    top:0;
     width:100%;
+    height:72px;
+    line-height: 72px;
     background-color:rgb(95, 192, 205);
     overflow:hidden;
+    text-align: center;
+    vertical-alsign: middle;
 }
 .text_close{
     font-size:2rem;
-    font-family:"Adobe Heiti Std";
+    font-family:SimHei;
     color:white;
-    text-align: left;
-    position:absolute;
-    left:3%;
-    top:5%;
+    display:inline-block;
+    vertical-align : middle;
+    padding:0 3%;
+    float:left;
 }
 .text_login{
     font-size:2.25rem;
-    font-family:"Adobe Heiti Std";
+    font-family:SimHei;
     color:white;
     text-align:center;
+    display:inline-block;
+    vertical-align : middle;
 }
 .text_register{
     font-size:2rem;
-    font-family:"Adobe Heiti Std";
+    font-family:SimHei;
     color:white;
-    text-align: right;
-    position:absolute;
-    right:3%;
-    top:5%;
+    display:inline-block;
+    vertical-align : middle;
+    padding:0 3%;
+    float:right;
 }
 form ul{
     width:100%;
-    background-color:white;
+    background-color: rgb(239,240,244);
     overflow:hidden;
     list-style-type: none;
-    margin-top:5rem;padding:0;
+    margin-top:72px;padding:0;
+    text-align:center;
     vertical-align: middle;
 }
+li{
+    background-color:white;
+    margin:8px 0;
+}
+
 .pic{
-    margin:1% 4%;
+    margin: 2em 0 2em 4%;
+    padding-right: 2.25em;
+    border-right:2px solid rgb(239,240,244);
     float:left;
     clear:both;
 }
 .inputstlye{
-     font-family:"Adobe Heiti Std";
+     font-family:SimHei;
      font-size:2rem;
-     margin:1% 4%;
+     padding: 1em 4%;
+     height:43px;
      border: none;
      clear:both;
      width:65%;
  }
+.li_enter{
+    background-color:rgb(239,240,244);
+    margin:0;
+}
 .enter{
     width:100%;
+    height:72px;
+    margin-top:1em;
     background-color: rgb(95, 192, 205);
-    font-family:"Adobe Heiti Std";
+    font-family:SimHei;
+    font-size:2.25em;
     color: white;
     text-align: center;
-    font-size:2rem;
     border:0;
 }
 a:link {
@@ -86,7 +103,7 @@ a:active{
 }
 .pswforgot{
     font-size:2rem;
-    font-family:"Adobe Heiti Std";
+    font-family:SimHei;
     color:rgb(95, 192, 205);
     float:right;
 }
