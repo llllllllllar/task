@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *{
     margin:0;
     padding:0;
@@ -13,15 +12,15 @@
     position:fixed;
     top:0;
     width:100%;
-    height:48.5px;
-    line-height:48.5px;
+    height:4.1rem;
+    line-height:4rem;
     background-color:#5FC0CD;
     text-align:center;
     vertical-align:middle;
 }
 .back{
     position: absolute;
-    top:11px;
+    top:1rem;
     left:3%;
     width:100%;max-width:16px;
     height:100%;max-height:27px;
@@ -31,7 +30,63 @@
     color:#FFF;
     text-align:center;
     vertical-align:middle;
+}
+.main_top{
+    background:url(task5pic/bg.png) no-repeat;
+    background-size:100%;
+    margin-top:4rem;
+    width:100%;
+    height:27rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.portrait{
+    margin:6.25rem 0 6.25rem 3%;
+    float:left;
 
+}
+@media screen and (max-device-width:700px){
+    .portrait{
+        margin:3.25rem 0 3.25rem 3%;
+        float:left;
+        width:84.5px;
+    }
+}
+.name_age{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    color:#FFF;
+
+}
+.address{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    color:#FFF;
+}
+ul{
+    margin:0 3% 3rem 3%;
+}
+.skill{
+    font-size:2rem;
+    border-left:2px solid #5FC0CD;
+}
+.stay_home{
+    font-size: 1.75rem;
+    border-right:1px solid rgb(153,153,153);
+}
+.text_left{
+    font-size: 1.75rem;
+    border-right:1px solid rgb(225,229,231);
+    color:rgb(153,153,153)
+}
+.text_right{
+    font-size:1.75rem;
+}
+.text_price{
+    font-size:1.75rem;
+    color:rgb(226,97,99)
 }
 .footer{
     position:fixed;
@@ -48,8 +103,7 @@
     margin:0 0 3% 3%;
 	padding:1rem 0.5rem;
 	border-radius:1rem;
-    border-style: solid;
-    border-color:#5FC0CD;
+    border: solid #5FC0CD;
 	float:left;
 }
 .tel_connect{
@@ -59,8 +113,7 @@
 	background-color:#5FC0CD;
     margin:0 3% 3% 0;
 	padding:1rem 0.5rem;
-    border-style: solid;
+    border:solid #5FC0CD;
 	border-radius:1rem;
-    border-color:#5FC0CD;
 	float:right;
 }
