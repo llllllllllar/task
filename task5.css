@@ -34,63 +34,73 @@
 }
 .main_top{
     background:url(task5pic/bg.png) no-repeat;
-    background-size:100%;
+    background-size:cover;
     margin-top:4rem;
-    padding:40px 0;
     width:100%;
     height:auto;
-    text-align: center;
-    vertical-align: middle;
 }
 .portrait{
-    margin-left:3%;
+    width:84.5px;
+    margin:40px 5% 0 3%;
     float:left;
 
 }
-@media screen and (max-device-width:700px){
-    .portrait{
-        margin-left:3%;
-        float:left;
-        width:84.5px;
-    }
+.introduction{
+    width:100%;
+    height:164px;
+}
 .name_age{
-    text-align: center;
-    vertical-align: middle;
+    text-align:center;
     font-size: 2rem;
     color:#FFF;
-
+    position:relative;
+    top:4rem;
 }
 .address{
-    text-align: center;
-    vertical-align: middle;
-    font-size: 1.25rem;
+    text-align:center;
+    font-size: 1.5rem;
     color:#FFF;
+    position:relative;
+    top:4rem;
+}
+.address_pic{
+    width:9px;
 }
 ul{
     width:100%;
     overflow:hidden;
     list-style-type: none;
-    margin:0 3% 3rem 3%;
+    margin-left:3%;
     vertical-align: middle;
 }
-
+li{
+    padding:2% ;
+}
+.star{
+    width:18px;
+}
 .skill{
+    padding:2%;
     font-size:2rem;
     border-left:2px solid #5FC0CD;
 }
 .stay_home{
+    padding:2%;
     font-size: 1.75rem;
     border-right:1px solid rgb(153,153,153);
 }
 .text_left{
+    padding:2%;
     font-size: 1.75rem;
     border-right:1px solid rgb(225,229,231);
     color:rgb(153,153,153)
 }
 .text_right{
+    padding:2%;
     font-size:1.75rem;
 }
 .text_price{
+    padding:2%;
     font-size:1.75rem;
     color:rgb(226,97,99)
 }
