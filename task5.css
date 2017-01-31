@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     font-size:12px;
-    font-family:SimHei;
+    font-family:STHeitiSC Light;
 }
 .wrap{
     width:100%;
@@ -13,21 +13,21 @@
     position:fixed;
     top:0;
     width:100%;
-    height:4.1rem;
-    line-height:4rem;
+    height:3.54167rem;
+    line-height:3.54167rem;
     background-color:#5FC0CD;
     text-align:center;
     vertical-align:middle;
+    z-index: 1;
 }
 .back{
     position: absolute;
-    top:1rem;
-    left:3%;
-    width:100%;max-width:16px;
-    height:100%;max-height:27px;
+    top:1.125rem;
+    left:4.8611%;
+    max-width:11px;
 }
 .personal_page{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:#FFF;
     text-align:center;
     vertical-align:middle;
@@ -35,74 +35,99 @@
 .main_top{
     background:url(task5pic/bg.png) no-repeat;
     background-size:cover;
-    margin-top:4rem;
+    padding-top:3.5rem;
     width:100%;
     height:auto;
 }
 .portrait{
-    width:84.5px;
-    margin:40px 5% 0 3%;
+    max-width:84.5px;
+    margin:3.29166rem 5.6944% 0 4.16667%;
     float:left;
 
 }
 .introduction{
     width:100%;
-    height:164px;
+    height:13.5833rem;
+    position:relative;
+    top:4.875rem;
 }
 .name_age{
     text-align:center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:#FFF;
-    position:relative;
-    top:4rem;
+}
+.age{
+    font-size: 1.33333rem;
 }
 .address{
     text-align:center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:#FFF;
-    position:relative;
-    top:4rem;
 }
 .address_pic{
-    width:9px;
-}
-ul{
-    width:100%;
-    overflow:hidden;
-    list-style-type: none;
-    margin-left:3%;
-    vertical-align: middle;
-}
-li{
-    padding:2% ;
-}
-.star{
-    width:18px;
+    max-width:13.5px;
 }
 .skill{
-    padding:2%;
-    font-size:2rem;
+    margin:1.375rem 4.16667%;
+    padding:0 3.8889%;
+    font-size:1.33333rem;
     border-left:2px solid #5FC0CD;
+    vertical-align:middle;
+}
+li{
+    padding:1.5rem 3.61111%;
+    overflow:hidden;
+    list-style-type: none;
+}
+.main_bottom{
+    padding-bottom:7.3333rem;
+}
+.bottom_border{
+    border-bottom:1px solid rgb(225,229,231);
+}
+.particulars{
+    width:100%;
+    padding-left:4.16667%;
+    border-top:1px solid rgb(225,229,231);
+    border-bottom:1px solid rgb(225,229,231);
+    vertical-align: middle;
+}
+.star{
+    max-width:12px;
+    vertical-align: middle;
 }
 .stay_home{
-    padding:2%;
-    font-size: 1.75rem;
-    border-right:1px solid rgb(153,153,153);
+    display:inline;
+    font-size: 1.33333rem;
+    padding:0.1% 1rem 0 0;
+    border-right:1px solid rgb(225,229,231);
+    vertical-align: middle;
 }
 .text_left{
-    padding:2%;
-    font-size: 1.75rem;
+    display:inline;
+    font-size: 1.33333rem;
+    padding:0.1% 1rem 0 0;
     border-right:1px solid rgb(225,229,231);
-    color:rgb(153,153,153)
+    color:rgb(153,153,153);
+    vertical-align: middle;
 }
 .text_right{
-    padding:2%;
-    font-size:1.75rem;
+    display:inline;
+    font-size:1.33333rem;
+    vertical-align: middle;
 }
 .text_price{
-    padding:2%;
-    font-size:1.75rem;
-    color:rgb(226,97,99)
+    display:inline;
+    font-size:1.33333rem;
+    color:rgb(226,97,99);
+    vertical-align: middle;
+}
+
+.text_self{
+    display: inline-block;
+    width:54.16667%;
+    font-size:1.16667rem;
+    vertical-align: middle;
 }
 .footer{
     position:fixed;
@@ -110,13 +135,14 @@ li{
     text-align: center;
     width:100%;
     background-color:#FFF;
+    z-index: 1;
 }
 .leave_message{
 	width:38%;
 	background-color:#FFF;
 	color:#5FC0CD;
-    font-size:2rem;
-    margin:0 0 3% 3%;
+    font-size:1.41667rem;
+    margin-left:5%;
 	padding:1rem 0.5rem;
 	border-radius:1rem;
     border: solid #5FC0CD;
@@ -125,9 +151,9 @@ li{
 .tel_connect{
 	width:38%;
 	color:#FFF;
-    font-size:2rem;
+    font-size:1.41667rem;
 	background-color:#5FC0CD;
-    margin:0 3% 3% 0;
+    margin-right:5%;
 	padding:1rem 0.5rem;
     border:solid #5FC0CD;
 	border-radius:1rem;
