@@ -4,15 +4,18 @@
     font-size:12px;
     font-family:STHeitiSC Light;
 }
-.wrap{
+.wrapper{
     width:100%;
+    max-width:720px;
     height:100%;
+    margin:0 auto;
     overflow: hidden;
 }
 .header{
     position:fixed;
     top:0;
     width:100%;
+    max-width:720px;
     height:3.54167rem;
     line-height:3.54167rem;
     background-color:#5FC0CD;
@@ -32,7 +35,7 @@
     text-align:center;
     vertical-align:middle;
 }
-.main_top{
+.main{
     background:url(task5pic/bg.png) no-repeat;
     background-size:cover;
     padding-top:3.5rem;
@@ -51,7 +54,7 @@
     position:relative;
     top:4.875rem;
 }
-.name_age{
+.name{
     text-align:center;
     font-size: 1.5rem;
     color:#FFF;
@@ -75,14 +78,17 @@
     vertical-align:middle;
 }
 li{
-    padding:1.5rem 3.61111%;
     overflow:hidden;
     list-style-type: none;
 }
-.main_bottom{
+.interval{
+    padding:1.5rem 3.61111%;
+}
+.content{
     padding-bottom:7.3333rem;
 }
 .bottom_border{
+    padding:1.5rem 3.61111%;
     border-bottom:1px solid rgb(225,229,231);
 }
 .particulars{
@@ -99,41 +105,44 @@ li{
 .stay_home{
     display:inline;
     font-size: 1.33333rem;
-    padding:0.1% 1rem 0 0;
+    padding:.1% 1rem 0 0;
     border-right:1px solid rgb(225,229,231);
     vertical-align: middle;
 }
 .text_left{
     display:inline;
     font-size: 1.33333rem;
-    padding:0.1% 1rem 0 0;
+    padding:.1% 1rem 0 0;
     border-right:1px solid rgb(225,229,231);
     color:rgb(153,153,153);
     vertical-align: middle;
 }
 .text_right{
     display:inline;
+    padding:1.5rem 3.61111%;
     font-size:1.33333rem;
     vertical-align: middle;
 }
 .text_price{
     display:inline;
+    padding:1.5rem 3.61111%;
     font-size:1.33333rem;
     color:rgb(226,97,99);
     vertical-align: middle;
 }
 
 .text_self{
-    display: inline-block;
-    width:54.16667%;
+    display:inline-block;
+    width:53.47222%;
     font-size:1.16667rem;
-    vertical-align: middle;
+    vertical-align:middle;
 }
 .footer{
     position:fixed;
     bottom:0;
-    text-align: center;
+    text-align:center;
     width:100%;
+    max-width:720px;
     background-color:#FFF;
     z-index: 1;
 }
@@ -143,7 +152,7 @@ li{
 	color:#5FC0CD;
     font-size:1.41667rem;
     margin-left:5%;
-	padding:1rem 0.5rem;
+	padding:1rem .5rem;
 	border-radius:1rem;
     border: solid #5FC0CD;
 	float:left;
@@ -154,7 +163,7 @@ li{
     font-size:1.41667rem;
 	background-color:#5FC0CD;
     margin-right:5%;
-	padding:1rem 0.5rem;
+	padding:1rem .5rem;
     border:solid #5FC0CD;
 	border-radius:1rem;
 	float:right;
