@@ -1,36 +1,36 @@
-*{
-    margin:0;
-    padding:0;
+html,body,ul,li{
     font-size:12px;
     font-family:STHeitiSC Light;
+    margin:0;
+    padding:0;
 }
 .wrapper{
-    width:100%;
-    max-width:720px;
     height:100%;
+    max-width:720px;
     margin:0 auto;
-    overflow: hidden;
+    overflow:hidden;
+    width:100%;
 }
 .header{
-    position:fixed;
-    top:0;
+    background-color:#5FC0CD;
+    height:3.542rem;
+    line-height:3.542rem;
     width:100%;
     max-width:720px;
-    height:3.54167rem;
-    line-height:3.54167rem;
-    background-color:#5FC0CD;
+    position:fixed;
+    top:0;
     text-align:center;
     vertical-align:middle;
-    z-index: 1;
+    z-index:1;
 }
 .back{
-    position: absolute;
+    position:absolute;
     top:1.125rem;
-    left:4.8611%;
+    left:4.861%;
     max-width:11px;
 }
-.personal_page{
-    font-size: 1.5rem;
+.personal-page{
+    font-size:1.5rem;
     color:#FFF;
     text-align:center;
     vertical-align:middle;
@@ -44,97 +44,95 @@
 }
 .portrait{
     max-width:84.5px;
-    margin:3.29166rem 5.6944% 0 4.16667%;
+    margin:3.292rem 5.694% 0 4.167%;
     float:left;
-
 }
 .introduction{
     width:100%;
-    height:13.5833rem;
+    height:13.583rem;
     position:relative;
     top:4.875rem;
 }
 .name{
     text-align:center;
-    font-size: 1.5rem;
+    font-size:1.5rem;
     color:#FFF;
 }
 .age{
-    font-size: 1.33333rem;
+    font-size:1.333rem;
 }
 .address{
     text-align:center;
-    font-size: 1rem;
+    font-size:1rem;
     color:#FFF;
 }
-.address_pic{
-    max-width:13.5px;
+.address-pic{
+    max-width:9px;
 }
 .skill{
-    margin:1.375rem 4.16667%;
-    padding:0 3.8889%;
-    font-size:1.33333rem;
+    margin:1.375rem 4.167%;
+    padding:0 3.889%;
+    font-size:1.333rem;
     border-left:2px solid #5FC0CD;
     vertical-align:middle;
 }
 li{
     overflow:hidden;
-    list-style-type: none;
+    list-style-type:none;
 }
 .interval{
-    padding:1.5rem 3.61111%;
+    padding:1.5rem 3.611%;
 }
 .content{
-    padding-bottom:7.3333rem;
+    padding-bottom:7.333rem;
 }
-.bottom_border{
-    padding:1.5rem 3.61111%;
-    border-bottom:1px solid rgb(225,229,231);
+.bottom-border{
+    padding:1.5rem 3.611%;
+    border-bottom:1px solid #E1E5E7;
 }
 .particulars{
     width:100%;
-    padding-left:4.16667%;
-    border-top:1px solid rgb(225,229,231);
-    border-bottom:1px solid rgb(225,229,231);
-    vertical-align: middle;
+    padding-left:4.167%;
+    border-top:1px solid #E1E5E7;
+    border-bottom:1px solid #E1E5E7;
+    vertical-align:middle;
 }
 .star{
     max-width:12px;
-    vertical-align: middle;
+    vertical-align:middle;
 }
-.stay_home{
+.text-home{
     display:inline;
-    font-size: 1.33333rem;
+    font-size:1.333rem;
     padding:.1% 1rem 0 0;
-    border-right:1px solid rgb(225,229,231);
+    border-right:1px solid #E1E5E7;
     vertical-align: middle;
 }
-.text_left{
+.text-left{
     display:inline;
-    font-size: 1.33333rem;
+    font-size:1.333rem;
     padding:.1% 1rem 0 0;
-    border-right:1px solid rgb(225,229,231);
-    color:rgb(153,153,153);
+    border-right:1px solid #E1E5E7;
+    color:#999;
     vertical-align: middle;
 }
-.text_right{
+.text-right{
     display:inline;
-    padding:1.5rem 3.61111%;
-    font-size:1.33333rem;
+    padding:1.5rem 3.611%;
+    font-size:1.333rem;
     vertical-align: middle;
 }
-.text_price{
+.text-price{
     display:inline;
-    padding:1.5rem 3.61111%;
-    font-size:1.33333rem;
-    color:rgb(226,97,99);
+    padding:1.5rem 3.611%;
+    font-size:1.333rem;
+    color:#E26163;
     vertical-align: middle;
 }
-
-.text_self{
+.text-self{
     display:inline-block;
-    width:53.47222%;
-    font-size:1.16667rem;
+    width:53.472%;
+    font-size:1.167rem;
     vertical-align:middle;
 }
 .footer{
@@ -144,27 +142,27 @@ li{
     width:100%;
     max-width:720px;
     background-color:#FFF;
-    z-index: 1;
+    z-index:1;
 }
-.leave_message{
-	width:38%;
-	background-color:#FFF;
-	color:#5FC0CD;
-    font-size:1.41667rem;
+.leave-message{
+    width:38%;
+    background-color:#FFF;
+    color:#5FC0CD;
+    font-size:1.417rem;
     margin-left:5%;
-	padding:1rem .5rem;
-	border-radius:1rem;
+    padding:1rem .5rem;
+    border-radius:1rem;
     border: solid #5FC0CD;
-	float:left;
+    float:left;
 }
-.tel_connect{
-	width:38%;
-	color:#FFF;
-    font-size:1.41667rem;
-	background-color:#5FC0CD;
+.tel-connect{
+    width:38%;
+    color:#FFF;
+    font-size:1.417rem;
+    background-color:#5FC0CD;
     margin-right:5%;
-	padding:1rem .5rem;
+    padding:1rem .5rem;
     border:solid #5FC0CD;
-	border-radius:1rem;
-	float:right;
+    border-radius:1rem;
+    float:right;
 }
