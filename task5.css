@@ -144,6 +144,9 @@ li{
     background-color:#FFF;
     z-index:1;
 }
+input[type="button"],button{
+    -webkit-appearance: none;
+}
 .leave-message{
     width:38%;
     background-color:#FFF;
