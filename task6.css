@@ -1,0 +1,33 @@
+html{
+  font-size:62.5%;
+}
+body{
+  font-family:STHeitiSC;
+}
+.head-background{background-color:#FFF;}
+.button-background{background-color:#5FC0CD;}
+.foot-background{background-color: #FFF;}
+
+.button-height{height:44px;line-height:44px;}
+.list-height{height:44px;line-height:44px;}
+
+.border-bottom{border-bottom:1px solid #DEE5E7;}
+.border-right{border-right:1px solid #DEE5E7;}
+
+.main-padding{padding:90px 0 50px;}
+.list-padding{padding:12px 0;}
+.content-padding{padding:4.75px 0;}
+.icon-padding{padding:3px 25px;}
+
+.text-font-color{color:#999;}
+.date-font-color{color:#000;}
+.price-font-color{color:#E63B0E;}
+.home-font-color{color:#5FC0CD;}
+
+.icon-map{max-width:21px;}
+.icon-calendar{max-width:12px;}
+.icon-address{max-width:9.5px;}
+.icon-right{max-width:9.5px;}
+.icon-home{max-width:23px;}
+.icon-pen{max-width:47px;}
+.icon-person{max-width:21px;}
