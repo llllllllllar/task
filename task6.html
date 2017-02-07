@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="task6.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,28 +22,28 @@
 </head>
 <body>
   <div class="navbar navbar-fixed-top head-background">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row button-background button-height text-center">
-        <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"></div>
-          <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
+        <div class="col-xs-2 col-md-4 col-sm-4 col-lg-4"></div>
+          <div class="col-xs-8 col-md-4 col-sm-4 col-lg-4">
             <div class="row">
-              <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-right">
-                <button type="button" class="btn btn-default active">找雇主</button>
+              <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-right button-padding-employer">
+                <button type="button" class="btn active button-font-size button-color-employer">找雇主</button>
               </div>
-              <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-left">
-                <button type="button" class="btn btn-default active">找护工</button>
+              <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-left button-padding-employee">
+                <button type="button" class="btn active button-font-size button-color-employee">找护工</button>
               </div>
             </div>
           </div>
-          <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4 text-right">
+          <div class="col-xs-2 col-md-4 col-sm-4 col-lg-4 text-right">
             <img src="task6pic/map.png" class="icon-map" >
           </div>
       </div>
       <div class="nav text-center text-font-color">
-        <div class="row border-bottom list-padding">
+        <div class="row border-bottom content-font-size list-padding">
         <div class="dropdown col-xs-4 col-md-4 col-sm-4 col-lg-4 border-right">
-          <section class="dropdown-toggle" data-toggle="dropdown">
-            所在地
+          <section class="dropdown-toggle row" data-toggle="dropdown">
+            <div class="col-xs-10 col-md-10 col-sm-10 col-lg-10">所在地</div>
             <div class="caret"></div>
           </section>
           <ul class="dropdown-menu">
@@ -51,8 +51,8 @@
           </ul>
         </div>
         <div class="dropdown col-xs-4 col-md-4 col-sm-4 col-lg-4 border-right">
-          <section class="dropdown-toggle" data-toggle="dropdown">
-            食宿
+          <section class="dropdown-toggle row" data-toggle="dropdown">
+            <div class="col-xs-10 col-md-10 col-sm-10 col-lg-10">食宿</div>
             <div class="caret"></div>
           </section>
           <ul class="dropdown-menu">
@@ -61,8 +61,8 @@
           </ul>
         </div>
         <div class="dropdown col-xs-4 col-md-4 col-sm-4 col-lg-4">
-          <section class="dropdown-toggle" data-toggle="dropdown">
-            病人情况
+          <section class="dropdown-toggle row" data-toggle="dropdown">
+            <div class="col-xs-10 col-md-10 col-sm-10 col-lg-10">病人情况</div>
             <div class="caret"></div>
           </section>
           <ul class="dropdown-menu">
@@ -73,152 +73,146 @@
       </div>
   </div>
   </div>
-  <div class="container main-padding">
-    <div class="row border-bottom">
-      <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 text-font-color">
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/calendar.png" class="icon-calendar">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding ">服务日期</div>
+  <div class="container-fluid main">
+    <div class="border-bottom content-padding text-font-color">
+      <div class="row">
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
+          <div><img src="task6pic/calendar.png" class="icon-calendar"></div>
+          <div class="content-font-size">&nbsp;</div>
+          <div><img src="task6pic/address.png" class="icon-address"></div>
         </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding "> </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding date-font-color">2015-7-5 至 2015-7-12</div>
-          <div class="col-sm-2 col-md-3 col-xs-3 col-lg-3 content-padding price-font-color">25元/小时</div>
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 content-padding">
-            <img src="task6pic/right.png" class="icon-right"></div>
+        <div class="col-sm-6 col-md-6 col-xs-7 col-lg-6 content-margin">
+          <div class=" content-font-size">服务日期</div>
+          <div class="date-font-color content-font-size">2015-7-5 至 2015-7-12</div>
+          <div class="address-font-size">北京.通州.果园</div>
         </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/address.png" class="icon-address">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding">北京.通州.果园</div>
+        <div class="col-sm-4 col-md-4 col-xs-3 col-lg-4 price-font-color  price-font-size text-right ">
+          <div class="row">&nbsp;</div>
+          <div class="row">25元/小时</div>
         </div>
-      </div>
-    </div>
-    <div class="row border-bottom">
-      <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 text-font-color">
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/calendar.png" class="icon-calendar">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding ">服务日期</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding "> </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding date-font-color">2015-7-5 至 2015-7-12</div>
-          <div class="col-sm-2 col-md-3 col-xs-3 col-lg-3 content-padding price-font-color">35元/小时</div>
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 content-padding">
-            <img src="task6pic/right.png" class="icon-right"></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/address.png" class="icon-address">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding">北京.通州.果园</div>
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 text-center">
+          <div class="row">&nbsp;</div>
+          <div class="row"><img src="task6pic/right.png" class="icon-right"></div>
         </div>
       </div>
     </div>
-    <div class="row border-bottom">
-      <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 text-font-color">
+    <div class="border-bottom content-padding text-font-color">
         <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/calendar.png" class="icon-calendar">
+          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
+            <div><img src="task6pic/calendar.png" class="icon-calendar"></div>
+            <div class="content-font-size">&nbsp;</div>
+            <div><img src="task6pic/address.png" class="icon-address"></div>
           </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding ">服务日期</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding "> </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding date-font-color">2015-7-5 至 2015-7-12</div>
-          <div class="col-sm-2 col-md-3 col-xs-3 col-lg-3 content-padding price-font-color">45元/小时</div>
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 content-padding">
-            <img src="task6pic/right.png" class="icon-right"></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/address.png" class="icon-address">
+          <div class="col-sm-6 col-md-6 col-xs-7 col-lg-6 content-margin">
+            <div class=" content-font-size">服务日期</div>
+            <div class="date-font-color content-font-size">2015-7-5 至 2015-7-12</div>
+            <div class="address-font-size">北京.通州.果园</div>
           </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding">北京.通州.果园</div>
+          <div class="col-sm-4 col-md-4 col-xs-3 col-lg-4 price-font-color  price-font-size text-right ">
+            <div class="row">&nbsp;</div>
+            <div class="row">35元/小时</div>
+          </div>
+          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 text-center">
+            <div class="row">&nbsp;</div>
+            <div class="row"><img src="task6pic/right.png" class="icon-right"></div>
+          </div>
+        </div>
+        </div>
+    <div class="border-bottom content-padding text-font-color">
+      <div class="row">
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
+          <div><img src="task6pic/calendar.png" class="icon-calendar"></div>
+          <div class="content-font-size">&nbsp;</div>
+          <div><img src="task6pic/address.png" class="icon-address"></div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-xs-7 col-lg-6 content-margin">
+          <div class=" content-font-size">服务日期</div>
+          <div class="date-font-color content-font-size">2015-7-5 至 2015-7-12</div>
+          <div class="address-font-size">北京.通州.果园</div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-xs-3 col-lg-4 price-font-color  price-font-size text-right ">
+          <div class="row">&nbsp;</div>
+          <div class="row">45元/小时</div>
+        </div>
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 text-center">
+          <div class="row">&nbsp;</div>
+          <div class="row"><img src="task6pic/right.png" class="icon-right"></div>
         </div>
       </div>
     </div>
-    <div class="row border-bottom">
-      <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 text-font-color">
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/calendar.png" class="icon-calendar">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding ">服务日期</div>
+    <div class="border-bottom content-padding text-font-color">
+      <div class="row">
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
+          <div><img src="task6pic/calendar.png" class="icon-calendar"></div>
+          <div class="content-font-size">&nbsp;</div>
+          <div><img src="task6pic/address.png" class="icon-address"></div>
         </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding "> </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding date-font-color">2015-7-5 至 2015-7-12</div>
-          <div class="col-sm-2 col-md-3 col-xs-3 col-lg-3 content-padding price-font-color">45元/小时</div>
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 content-padding">
-            <img src="task6pic/right.png" class="icon-right"></div>
+        <div class="col-sm-6 col-md-6 col-xs-7 col-lg-6 content-margin">
+          <div class=" content-font-size">服务日期</div>
+          <div class="date-font-color content-font-size">2015-7-5 至 2015-7-12</div>
+          <div class="address-font-size">北京.通州.果园</div>
         </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/address.png" class="icon-address">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding">北京.通州.果园</div>
+        <div class="col-sm-4 col-md-4 col-xs-3 col-lg-4 price-font-color  price-font-size text-right ">
+          <div class="row">&nbsp;</div>
+          <div class="row">45元/小时</div>
         </div>
-      </div>
-    </div>
-    <div class="row border-bottom">
-      <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 text-font-color">
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/calendar.png" class="icon-calendar">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding ">服务日期</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding "> </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding date-font-color">2015-7-5 至 2015-7-12</div>
-          <div class="col-sm-2 col-md-3 col-xs-3 col-lg-3 content-padding price-font-color">45元/小时</div>
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 content-padding">
-            <img src="task6pic/right.png" class="icon-right"></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/address.png" class="icon-address">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding">北京.通州.果园</div>
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 text-center">
+          <div class="row">&nbsp;</div>
+          <div class="row"><img src="task6pic/right.png" class="icon-right"></div>
         </div>
       </div>
     </div>
-    <div class="row border-bottom">
-      <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 text-font-color">
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/calendar.png" class="icon-calendar">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding ">服务日期</div>
+    <div class="border-bottom content-padding text-font-color">
+      <div class="row">
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
+          <div><img src="task6pic/calendar.png" class="icon-calendar"></div>
+          <div class="content-font-size">&nbsp;</div>
+          <div><img src="task6pic/address.png" class="icon-address"></div>
         </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding "> </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding date-font-color">2015-7-5 至 2015-7-12</div>
-          <div class="col-sm-2 col-md-3 col-xs-3 col-lg-3 content-padding price-font-color">45元/小时</div>
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 content-padding">
-            <img src="task6pic/right.png" class="icon-right"></div>
+        <div class="col-sm-6 col-md-6 col-xs-7 col-lg-6 content-margin">
+          <div class=" content-font-size">服务日期</div>
+          <div class="date-font-color content-font-size">2015-7-5 至 2015-7-12</div>
+          <div class="address-font-size">北京.通州.果园</div>
         </div>
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 icon-padding">
-            <img src="task6pic/address.png" class="icon-address">
-          </div>
-          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6 content-padding">北京.通州.果园</div>
+        <div class="col-sm-4 col-md-4 col-xs-3 col-lg-4 price-font-color  price-font-size text-right ">
+          <div class="row">&nbsp;</div>
+          <div class="row">45元/小时</div>
+        </div>
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 text-center">
+          <div class="row">&nbsp;</div>
+          <div class="row"><img src="task6pic/right.png" class="icon-right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="border-bottom content-padding text-font-color">
+      <div class="row">
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1">
+          <div><img src="task6pic/calendar.png" class="icon-calendar"></div>
+          <div class="content-font-size">&nbsp;</div>
+          <div><img src="task6pic/address.png" class="icon-address"></div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-xs-7 col-lg-6 content-margin">
+          <div class=" content-font-size">服务日期</div>
+          <div class="date-font-color content-font-size">2015-7-5 至 2015-7-12</div>
+          <div class="address-font-size">北京.通州.果园</div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-xs-3 col-lg-4 price-font-color  price-font-size text-right ">
+          <div class="row">&nbsp;</div>
+          <div class="row">45元/小时</div>
+        </div>
+        <div class="col-sm-1 col-md-1 col-xs-1 col-lg-1 text-center">
+          <div class="row">&nbsp;</div>
+          <div class="row"><img src="task6pic/right.png" class="icon-right"></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="navbar navbar-fixed-bottom foot-background">
-    <div class="container ">
-    <div class="nav row text-center ">
+  <div class="navbar navbar-fixed-bottom foot-background foot-height">
+    <div class="container-fluid">
+    <div class="nav row text-center foot-font-size">
       <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
         <div class="row"><img src="task6pic/home.png" class="icon-home"></div>
-        <div class="row home-font-color">首页</div>
+        <div class="row home-font-color ">首页</div>
       </div>
       <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
         <img src="task6pic/pen.png" class="icon-pen">

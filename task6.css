@@ -1,33 +1,44 @@
 html{
   font-size:62.5%;
-}
-body{
   font-family:STHeitiSC;
 }
 .head-background{background-color:#FFF;}
 .button-background{background-color:#5FC0CD;}
 .foot-background{background-color: #FFF;}
 
-.button-height{height:44px;line-height:44px;}
-.list-height{height:44px;line-height:44px;}
+.button-height{height:4.4rem;line-height:4.4rem;}
+.list-height{height:4rem;line-height:4rem;}
+.foot-height{height:5rem;}
 
 .border-bottom{border-bottom:1px solid #DEE5E7;}
 .border-right{border-right:1px solid #DEE5E7;}
 
-.main-padding{padding:90px 0 50px;}
-.list-padding{padding:12px 0;}
-.content-padding{padding:4.75px 0;}
-.icon-padding{padding:3px 25px;}
+.main{padding:9.35rem 0 4rem; overflow: hidden;}
+.list-padding{padding:1.3rem 0;}
+.content-padding{padding:1.5rem;}
 
+.button-padding-employer{padding-right:0;!important;}
+.button-padding-employee{padding-left:0;!important;}
+.content-margin{margin-left:-10px;}
+
+.button-color-employer{background-color:#55A8B3;color:#FFF;}
+.button-color-employee{background-color:#FFF;color:#55A8B3;}
 .text-font-color{color:#999;}
 .date-font-color{color:#000;}
 .price-font-color{color:#E63B0E;}
 .home-font-color{color:#5FC0CD;}
 
-.icon-map{max-width:21px;}
-.icon-calendar{max-width:12px;}
-.icon-address{max-width:9.5px;}
-.icon-right{max-width:9.5px;}
-.icon-home{max-width:23px;}
-.icon-pen{max-width:47px;}
-.icon-person{max-width:21px;}
+.button-font-size{font-size: 1.7rem;}
+.content-font-size{font-size:1.4rem;}
+.price-font-size{font-size:1.5rem;}
+.address-font-size{font-size:1.3rem;}
+.foot-font-size{font-size:1rem;}
+
+.icon-map{max-width:2.1rem;}
+.icon-triangle{max-width: .65rem;}
+.icon-calendar{max-width:1.2rem;}
+.icon-address{max-width:.95rem;vertical-align: middle;}
+.icon-right{max-width:.95rem;}
+.icon-home{max-width:2.3rem;}
+.icon-pen{max-width:4.7rem;}
+.icon-person{max-width:2.1rem;}
