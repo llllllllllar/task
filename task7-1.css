@@ -1,0 +1,114 @@
+html{
+  font-size: 62.5%;
+  font-family:STHeitiSC Light, serif;
+  margin:0;padding:0;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size:35%;
+  }
+}
+body{
+  background-color: rgb(240,240,240);
+}
+/* 导航栏样式 */
+.header-wrapper{
+  padding:.5rem 0;
+  background-color:rgb(41,189,224);
+  display:table;
+  width:100%;
+}
+.header{
+  display:table-cell;
+  vertical-align:middle;
+}
+.menu{
+  font-size:4rem;
+  color:rgb(255,255,255);
+}
+
+/* 主体样式 */
+.main-wrapper{
+  padding:1.8rem 3rem;
+}
+/* “上次游戏”样式 */
+.main-top-wrapper{
+  background-color: rgb(255,255,255);
+  padding:2.5rem 1.5rem;
+  border:1px solid rgb(201,201,201);
+  font-size:3.4rem;
+}
+.main-top-text{
+  text-align:center;
+  color:rgb(154,154,154)
+}
+.main-top-icon{
+  position: relative;
+  margin-top:-1.3rem;
+  float:right;
+  color:rgb(231,231,231);
+  font-size:4rem;
+}
+/* “选择游戏”样式 */
+.main-content-wrapper{
+  background-color:rgb(255,255,255);
+  margin:1.8rem 0;
+  border:1px solid rgb(201,201,201);
+}
+.main-title{
+  padding:1.2rem;
+  border-bottom:1px solid rgb(253,225,174);
+  font-size:3.7rem;
+  color:rgb(251,180,53);
+}
+.main{
+  margin:2rem 1.5rem 0;
+}
+.content{
+  padding:0 4rem ;
+}
+.content-button{
+  padding:2.5rem;
+  background-color:rgb(105,209,233);
+  color:rgb(255,255,255);
+  border-radius: 0;
+  border-color:rgb(105,209,233);
+  font-size: 3.2rem;
+}
+.content-text{
+  padding:1rem;
+  color:rgb(120,120,120);
+  font-size:2.4rem;
+}
+.content-icon-right {
+  float:right;
+  margin-top:2%;
+  color:rgb(253,180,53);
+  font-size:4rem;
+}
+@media screen and (max-width: 768px) {
+  .content-icon-right {
+    float:right;
+    margin-top:5%;
+    color:rgb(253,180,53);
+    font-size:4rem;
+  }
+}
+/* 轮播切换 */
+ul,li{
+  padding:0;
+}
+.circle-activity{
+  color:rgb(105,209,233);
+}
+.circle-inactivity{
+  color:rgb(240,240,240);
+}
+
+
+
+
+
+
+
+
