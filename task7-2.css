@@ -1,0 +1,93 @@
+html{
+  font-size: 62.5%;
+  font-family:STHeitiSC Light, serif;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 35%;
+  }
+}
+body{
+  background-color: rgb(41,189,224);
+  overflow: hidden;
+}
+/* 头部样式 */
+.header-wrapper{
+  padding:.5rem 0;
+}
+.header{
+  display:table;
+  padding:.5rem 1.5rem;
+  width:100%;
+}
+.menu{
+  float: left;
+  font-size:3.4rem;
+  color:rgb(255,255,255);
+}
+.remove{
+  float: right;
+  font-size:3.4rem;
+  color:rgb(255,255,255);
+}
+.header-text{
+  display:table-cell;
+  vertical-align:middle;
+  font-size:3.4rem;
+  color:rgb(255,255,255);
+  text-align:center;
+}
+
+/* 主体标题样式 */
+.main-wrapper{
+
+}
+.main-title{
+  display:table;
+  width:100%;
+  padding:2rem 1.5rem 2rem 3rem;
+  background-color: rgb(185,233,245);
+}
+.title-text{
+  display: table-cell;
+  vertical-align: middle;
+  font-size:2.6rem;
+}
+.play-circle{
+  float:right;
+  width:35%;
+}
+.triangle{
+   position: relative;
+   left:8%;
+   bottom:1rem;
+   z-index: -1;
+}
+.triangle-size{
+  height:2.5rem;
+}
+
+/* 主体副标题样式 */
+.subtitle-text{
+  color:rgb(255,255,255);
+  font-size: 2.4rem;
+  position: relative;
+  left:8%;
+  bottom:1rem;
+  z-index: -1;
+}
+
+/* 主体内容样式 */
+
+/* 底部样式 */
+.footer{
+  margin:1rem 6rem 3rem;
+}
+.footer-button{
+  padding:1.5rem;
+  background-color: rgb(251,180,53);
+  color:rgb(255,255,255);
+  border-radius: 0;
+  border-style: none;
+  font-size: 4rem;
+}

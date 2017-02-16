@@ -5,10 +5,10 @@
   <meta http-equiv="x-ua-compatible" content="IE=edge,Chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
-  <!--<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">-->
-  <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+  <!--<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
   <link rel="stylesheet" href="task7-1.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,25 +39,33 @@
   </div>
   <div class="main-content-wrapper">
     <div class="main-title text-center">捉鬼游戏</div>
-    <div class="main">
-      <div class="content text-center">
-        <div class="btn btn-primary btn-block content-button">简化版</div>
-        <div class="content-text">有1133个用户正在玩此款游戏</div>
+    <div class="main container-fluid">
+      <div class="row">
+        <div class="main-both col-xs-1"></div>
+        <div class="text-center col-xs-10">
+          <div class="btn btn-primary btn-block content-button">简化版</div>
+          <div class="content-text">有1133个用户正在玩此款游戏</div>
+        </div>
       </div>
-      <div class="content-icon-right">
-        <a href="task7-2.html" class="content-icon-right">
-          <i class="fa fa-lg fa-play" aria-hidden="true"></i>
-        </a>
+      <div class="row">
+        <div class="main-both col-xs-1"></div>
+        <div class="text-center col-xs-10">
+          <div class="btn btn-primary btn-block content-button">猜词版</div>
+          <div class="content-text">有1133个用户正在玩此款游戏</div>
+        </div>
+        <div class="main-both col-xs-1 right-icon">
+          <a href="task7-2.html" class="">
+            <img src="task7pic/right.png" class="right-icon-size">
+          </a>
+        </div>
       </div>
-      <div class="content text-center">
-        <div class="btn btn-primary btn-block content-button">猜词版</div>
-        <div class="content-text">有1133个用户正在玩此款游戏</div>
+      <div class="row">
+        <div class="main-both col-xs-1"></div>
+        <div class="text-center col-xs-10">
+          <div class="btn btn-primary btn-block content-button">白痴版</div>
+          <div class="content-text">有1133个用户正在玩此款游戏</div>
+        </div>
       </div>
-      <div class="content text-center">
-        <div class="btn btn-primary btn-block content-button">白痴版</div>
-        <div class="content-text">有1133个用户正在玩此款游戏</div>
-      </div>
-
     </div>
     <ul class="text-center carousel">
       <li class="fa fa-circle circle-activity"></li>
@@ -65,6 +73,8 @@
       <li class="fa fa-circle circle-inactivity"></li>
       <li class="fa fa-circle circle-inactivity"></li>
     </ul>
+  </div>
+
   </div>
 </div>
 </body>
