@@ -1,14 +1,12 @@
 html{
   font-size: 62.5%;
   font-family:STHeitiSC Light, serif;
+  overflow-x:hidden;
 }
 @media screen and (max-width: 768px) {
   html {
     font-size: 35%;
   }
-}
-body{
-  overflow: hidden;
 }
 /*头部样式*/
 .header-wrapper{
@@ -47,6 +45,57 @@ body{
 }
 
 /*主体下半部分样式*/
-.main-bottom{
+.main-content{
+  border-bottom: 1px solid rgb(221,221,221);
+}
+.main-content-title{
+  padding-top:1rem;
+}
+.main-content-days{
+  font-size:3rem;
+  color:rgb(81,81,81);
+  padding:0;
+}
+.main-content-duration{
+  position: relative;
+  top:1rem;
+  font-size:2rem ;
+  color:rgb(199,199,199);
+}
 
+.main-content-text{
+  padding:2rem 0;
+  font-size:2.6rem;
+  color:rgb(166,166,166);
+}
+
+.bottom-content-days{
+  font-size:3.988rem;
+  color:rgb(41,189,224);
+}
+.bottom-content-duration{
+  position: relative;
+  top:1rem;
+  font-size:2.744rem ;
+  color:rgb(41,189,224);
+}
+
+/*底部样式*/
+.footer-wrapper{
+  padding:1rem 2rem;
+  background:rgba(41,189,224,0.5);
+}
+.footer-button-left{
+  background-color: rgb(246,111,111);
+  font-size:4rem ;
+  color:rgb(255,255,255);
+  border-radius:1rem;
+  border-color:rgb(246,111,111);
+}
+.footer-button-right{
+  background-color: rgb(251,180,53);
+  font-size:4rem ;
+  color:rgb(255,255,255);
+  border-radius:1rem;
+  border-color:rgb(251,180,53);
 }
