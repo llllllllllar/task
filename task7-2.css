@@ -39,9 +39,6 @@ body{
 }
 
 /* 主体标题样式 */
-.main-wrapper{
-
-}
 .main-title{
   display:table;
   width:100%;
@@ -78,10 +75,63 @@ body{
 }
 
 /* 主体内容样式 */
+.main-content{
+  padding: 2rem 0;
+}
+.main-content-box{
+  border:.5rem solid rgb(255,255,255);
+  width:50%;
 
+}
+.main-content-text{
+  padding:2.5rem 0;
+  background: rgb(245,201,123);
+  font-size: 3rem;
+}
+.main-content-number{
+  background: rgb(131,176,154);
+  color:rgb(255,255,255);
+  font-size: 2.276rem;
+}
+.main-content-icon{
+  margin:.5rem 0;
+  padding:0;
+  list-style-type:none;
+  opacity: ;
+}
+.main-content-box:hover .main-content-icon{
+  opacity: 1;
+}
+li{
+  float: left;
+  margin-right:.5rem;
+  background:url("task7pic/icon.png") no-repeat;
+}
+.main-content-icon-knife{
+  background-position:0px 0px;
+  width:30px;
+  height:30px;
+}
+.main-content-icon-magnifier{
+  background-position:-40px 0px;
+  width:30px;
+  height:30px;
+}
+.main-content-icon-aim{
+  background-position:-80px 0px;
+  width:30px;
+  height:30px;
+}
+.main-content-icon-cross{
+  background-position:-120px 0px;
+  width:30px;
+  height:30px;
+}
 /* 底部样式 */
 .footer{
-  margin:1rem 6rem 3rem;
+  padding:1rem 6rem 3rem;
+  background-color: rgb(41,189,224);
+  z-index:1;
 }
 .footer-button{
   padding:1.5rem;
