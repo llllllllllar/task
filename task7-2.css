@@ -9,7 +9,7 @@ html{
 }
 body{
   background-color: rgb(41,189,224);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /* 头部样式 */
 .header-wrapper{
@@ -24,11 +24,15 @@ body{
   float: left;
   font-size:3.4rem;
   color:rgb(255,255,255);
+  width:4rem;
+  cursor:pointer;
 }
-.remove{
+.close{
   float: right;
   font-size:3.4rem;
   color:rgb(255,255,255);
+  width:4rem;
+  cursor: pointer;
 }
 .header-text{
   display:table-cell;
@@ -37,12 +41,15 @@ body{
   color:rgb(255,255,255);
   text-align:center;
 }
+.main-wrapper{
+  margin-bottom: 14rem;
+}
 
 /* 主体标题样式 */
 .main-title{
   display:table;
   width:100%;
-  padding:2rem 1.5rem 2rem 3rem;
+  padding:1rem 1.5rem 1rem 3rem;
   background-color: rgb(185,233,245);
 }
 .title-text{
@@ -50,9 +57,13 @@ body{
   vertical-align: middle;
   font-size:2.6rem;
 }
-.play-circle{
-  float:right;
-  width:35%;
+.music-play{
+  border:none;
+  background: transparent;
+  float: right;
+}
+.music-play-size{
+  width:5.2rem;
 }
 .triangle{
    position: relative;
@@ -75,69 +86,73 @@ body{
 }
 
 /* 主体内容样式 */
-.main-content{
-  padding: 2rem 0;
-}
 .main-content-box{
+  display: inline-block;
+  margin:1rem 0 1rem 1rem;
+  width:29.8%;
+}
+.main-content-text-box{
   border:.5rem solid rgb(255,255,255);
-  width:50%;
-
 }
 .main-content-text{
-  padding:2.5rem 0;
-  background: rgb(245,201,123);
-  font-size: 3rem;
+  padding:2.5rem;
+  background:rgb(245,201,123);
+  font-size:3rem;
 }
+@media screen and (max-width: 768px) {
+  .main-content-text{padding:1.25rem;}
+}
+
 .main-content-number{
   background: rgb(131,176,154);
   color:rgb(255,255,255);
   font-size: 2.276rem;
 }
 .main-content-icon{
-  margin:.5rem 0;
+  margin:.5rem auto;
   padding:0;
   list-style-type:none;
-  opacity: ;
+  opacity:0;
 }
 .main-content-box:hover .main-content-icon{
-  opacity: 1;
+  opacity:1;
 }
-li{
-  float: left;
-  margin-right:.5rem;
-  background:url("task7pic/icon.png") no-repeat;
+.main-content-icon{
+  margin:.5rem auto;
 }
 .main-content-icon-knife{
-  background-position:0px 0px;
-  width:30px;
-  height:30px;
+  background:url("task7pic/icon.png") no-repeat;
+  background-position:0 0;
 }
 .main-content-icon-magnifier{
-  background-position:-40px 0px;
-  width:30px;
-  height:30px;
+  background:url("task7pic/icon.png") no-repeat;
+  background-position:33.33% 0;
 }
 .main-content-icon-aim{
-  background-position:-80px 0px;
-  width:30px;
-  height:30px;
+  background:url("task7pic/icon.png") no-repeat;
+  background-position:66.67% 0;
 }
 .main-content-icon-cross{
-  background-position:-120px 0px;
-  width:30px;
-  height:30px;
+  background:url("task7pic/icon.png") no-repeat ;
+  background-position:100% 0;
+}
+.icon-size{
+  display:inline-block;
+  width:3rem;height:3rem;
+  background-size:15rem;
+  cursor: pointer;
 }
 /* 底部样式 */
 .footer{
   padding:1rem 6rem 3rem;
-  background-color: rgb(41,189,224);
+  background-color:rgb(41,189,224);
   z-index:1;
 }
 .footer-button{
   padding:1.5rem;
-  background-color: rgb(251,180,53);
+  background-color:rgb(251,180,53);
   color:rgb(255,255,255);
-  border-radius: 0;
-  border-style: none;
-  font-size: 4rem;
+  border-radius:0;
+  border-style:none;
+  font-size:4rem;
 }

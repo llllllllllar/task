@@ -5,7 +5,7 @@ html{
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size:35%;
+    font-size:40%;
   }
 }
 body{
@@ -25,11 +25,13 @@ body{
 .menu{
   font-size:4rem;
   color:rgb(255,255,255);
+  cursor: pointer;
 }
 
 /* 主体样式 */
 .main-wrapper{
   padding:1.8rem 3rem;
+  width:100%
 }
 /* “上次游戏”样式 */
 .main-top-wrapper{
@@ -61,7 +63,7 @@ body{
   font-size:3.7rem;
   color:rgb(251,180,53);
 }
-.main{
+.main-content{
   margin-top:2rem;
 }
 
@@ -69,7 +71,7 @@ body{
   padding:2.5rem;
   background-color:rgb(105,209,233);
   color:rgb(255,255,255);
-  border-radius: 0;
+  border-radius:0;
   border-style: none;
   font-size: 3.2rem;
 }
@@ -78,25 +80,52 @@ body{
   color:rgb(120,120,120);
   font-size:2.4rem;
 }
-.main-both{
-  padding:0;
-}
-.right-icon{
-  margin:1.6rem 0;
-}
-.right-icon-size{
-  width:2.5rem;
-}
 
+.right-icon{
+  position: fixed;
+  right:5.5%;
+  top:40rem;
+  width:4vw;
+  cursor: pointer;
+}
+@media screen and (max-width: 348px) {
+  .right-icon{
+
+  }
+}
+@media screen and (max-width: 500px) {
+  .right-icon{
+    position: fixed;
+    right: 20%;
+    top:36rem;
+    width:4vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .right-icon{
+    position: fixed;
+    right:8%;
+    top:35rem;
+    width:4vw;
+  }
+}
   /* 轮播切换 */
 ul,li{
   padding:0;
 }
 .circle-activity{
-  color:rgb(105,209,233);
+  display: inline-block;
+  padding: 0.6rem;
+  background-color:rgb(105,209,233);
+  border-radius: 50%;
+  cursor: pointer;
 }
 .circle-inactivity{
-  color:rgb(240,240,240);
+  display: inline-block;
+  padding: 0.6rem;
+  background-color:rgb(240,240,240);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 

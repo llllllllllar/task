@@ -22,8 +22,10 @@ html{
   display:table-cell;
   vertical-align: middle;
 }
+
 .header-icon-right{
   float:right;
+  cursor: pointer;
 }
 
 /*主体上半部分样式*/
