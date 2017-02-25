@@ -90,7 +90,7 @@ body{
 }
 .main-content-box{
   margin:1rem 2%;
-  float: left;
+  float:left;
   width:28%;
 }
 .main-content-text-box{
@@ -112,7 +112,7 @@ body{
   margin:.5rem auto;
   width:100%;
   padding:0;
-  opacity:1;
+  opacity:0;
   word-spacing:2.1vw;
 }
 @media screen and (max-width: 768px) {
@@ -146,12 +146,14 @@ body{
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  .icon-size{
-    display:inline-block;
-    width:2.6785rem;height:2.6785rem;
-    background-size:13.3929rem;
+  .icon-size {
+    display: inline-block;
+    width: 2.6785rem;
+    height: 2.6785rem;
+    background-size: 13.3929rem;
     cursor: pointer;
   }
+}
 /* 底部样式 */
 .footer{
   padding:1rem 6rem 3rem;
