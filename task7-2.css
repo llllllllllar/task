@@ -1,6 +1,5 @@
 html{
   font-size: 62.5%;
-  font-family:STHeitiSC Light, serif;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -20,14 +19,14 @@ body{
   padding:.5rem 1.5rem;
   width:100%;
 }
-.menu{
+.icon-menu{
   float: left;
   font-size:3.4rem;
   color:rgb(255,255,255);
   width:4rem;
   cursor:pointer;
 }
-.close{
+.icon-close{
   float: right;
   font-size:3.4rem;
   color:rgb(255,255,255);
@@ -86,21 +85,22 @@ body{
 }
 
 /* 主体内容样式 */
+.main-content{
+  padding-left:3%;
+}
 .main-content-box{
-  display: inline-block;
-  margin:1rem 0 1rem 1rem;
-  width:29.8%;
+  margin:1rem 2%;
+  float: left;
+  width:28%;
 }
 .main-content-text-box{
-  border:.5rem solid rgb(255,255,255);
+  border:3px solid rgb(255,255,255);
+
 }
 .main-content-text{
-  padding:2.5rem;
+  padding:2.8rem 0;
   background:rgb(245,201,123);
   font-size:3rem;
-}
-@media screen and (max-width: 768px) {
-  .main-content-text{padding:1.25rem;}
 }
 
 .main-content-number{
@@ -110,15 +110,18 @@ body{
 }
 .main-content-icon{
   margin:.5rem auto;
+  width:100%;
   padding:0;
-  list-style-type:none;
-  opacity:0;
+  opacity:1;
+  word-spacing:2.1vw;
 }
+@media screen and (max-width: 768px) {
+  .main-content-icon{
+  word-spacing:normal}
+}
+
 .main-content-box:hover .main-content-icon{
   opacity:1;
-}
-.main-content-icon{
-  margin:.5rem auto;
 }
 .main-content-icon-knife{
   background:url("task7pic/icon.png") no-repeat;
@@ -126,11 +129,11 @@ body{
 }
 .main-content-icon-magnifier{
   background:url("task7pic/icon.png") no-repeat;
-  background-position:33.33% 0;
+  background-position:33.3333% 0;
 }
 .main-content-icon-aim{
   background:url("task7pic/icon.png") no-repeat;
-  background-position:66.67% 0;
+  background-position:66.6667% 0;
 }
 .main-content-icon-cross{
   background:url("task7pic/icon.png") no-repeat ;
@@ -142,6 +145,13 @@ body{
   background-size:15rem;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .icon-size{
+    display:inline-block;
+    width:2.6785rem;height:2.6785rem;
+    background-size:13.3929rem;
+    cursor: pointer;
+  }
 /* 底部样式 */
 .footer{
   padding:1rem 6rem 3rem;
