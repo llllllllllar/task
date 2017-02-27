@@ -22,9 +22,12 @@ html{
   display:table-cell;
   vertical-align: middle;
 }
-
-.header-icon-right{
+.header-icon-home{
+  width:7.96875vw;max-width:5.1rem;
+}
+.header-icon-info{
   float:right;
+  width:6.25vw;max-width:4rem;
   cursor: pointer;
 }
 
@@ -36,6 +39,7 @@ html{
 }
 .img-win{
   margin:0 auto;
+  width:54.84375vw;max-width:35.1rem;
 }
 .text-win{
   font-size:3.3rem ;

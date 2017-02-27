@@ -8,6 +8,8 @@ html{
 }
 body{
   background-color: rgb(41,189,224);
+  height:100vh;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 /* 头部样式 */
@@ -19,20 +21,28 @@ body{
   padding:.5rem 1.5rem;
   width:100%;
 }
+.menu-icon-size{
+  width:5.625vw;max-width: 3.9rem;
+}
 .icon-menu{
   float: left;
   font-size:3.4rem;
   color:rgb(255,255,255);
-  width:4rem;
   cursor:pointer;
+}
+.icon-menu-size{
+  width:6.09375vw;max-width: 3.9rem;
 }
 .icon-close{
   float: right;
   font-size:3.4rem;
   color:rgb(255,255,255);
-  width:4rem;
   cursor: pointer;
 }
+.icon-close-size{
+  width:5.625vw;max-width: 3.6rem;
+}
+
 .header-text{
   display:table-cell;
   vertical-align:middle;
@@ -40,8 +50,8 @@ body{
   color:rgb(255,255,255);
   text-align:center;
 }
-.main-wrapper{
-  margin-bottom: 14rem;
+.main-title-wrapper{
+  margin-bottom: 1rem;
 }
 
 /* 主体标题样式 */
@@ -62,7 +72,7 @@ body{
   float: right;
 }
 .music-play-size{
-  width:5.2rem;
+  width:7.96875vw;max-width:5.2rem;
 }
 .triangle{
    position: relative;
@@ -86,19 +96,16 @@ body{
 
 /* 主体内容样式 */
 .main-content{
-  padding-left:3%;
+  padding:0 3% 11rem;
 }
 .main-content-box{
-  margin:1rem 2%;
-  float:left;
-  width:28%;
+  width:33.33%;
 }
 .main-content-text-box{
   border:3px solid rgb(255,255,255);
-
 }
 .main-content-text{
-  padding:2.8rem 0;
+  padding:25% 0;
   background:rgb(245,201,123);
   font-size:3rem;
 }
@@ -110,16 +117,9 @@ body{
 }
 .main-content-icon{
   margin:.5rem auto;
-  width:100%;
   padding:0;
   opacity:0;
-  word-spacing:2.1vw;
 }
-@media screen and (max-width: 768px) {
-  .main-content-icon{
-  word-spacing:normal}
-}
-
 .main-content-box:hover .main-content-icon{
   opacity:1;
 }
@@ -141,17 +141,62 @@ body{
 }
 .icon-size{
   display:inline-block;
-  width:3rem;height:3rem;
-  background-size:15rem;
+  width:7.25vw;height:7.25vw;
+  background-size:29vw;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-  .icon-size {
-    display: inline-block;
-    width: 2.6785rem;
-    height: 2.6785rem;
-    background-size: 13.3929rem;
-    cursor: pointer;
+@media screen and (max-width: 1400px) {
+  .icon-size{
+    width:7vw;height:7vw;
+    background-size:28vw;
+  }
+}
+@media screen and (max-width: 959px) {
+  .icon-size{
+    width:6.75vw;height:6.75vw;
+    background-size:27vw;
+  }
+}
+@media screen and (max-width: 738px) {
+  .icon-size{
+    width:6.5vw;height:6.5vw;
+    background-size:26vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .icon-size{
+    width:6.25vw;height:6.25vw;
+    background-size:25vw;
+  }
+}
+@media screen and (max-width: 505px) {
+  .icon-size{
+    width:6vw;height:6vw;
+    background-size:24vw;
+  }
+}
+@media screen and (max-width: 436px) {
+  .icon-size{
+    width:5.75vw;height:5.75vw;
+    background-size:23vw;
+  }
+}
+@media screen and (max-width: 383px) {
+  .icon-size{
+    width:5.5vw;height:5.5vw;
+    background-size:22vw;
+  }
+}
+@media screen and (max-width: 342px) {
+  .icon-size{
+    width:5.25vw;height:5.25vw;
+    background-size:21vw;
+  }
+}
+@media screen and (max-width: 309px) {
+  .icon-size{
+    width:5vw;height:5vw;
+    background-size:20vw;
   }
 }
 /* 底部样式 */
@@ -167,4 +212,29 @@ body{
   border-radius:0;
   border-style:none;
   font-size:4rem;
+}
+/* 弹窗遮罩 */
+.mask{
+  position: absolute;
+  top:33vh;
+  left:33vw;
+  padding:10%;
+  background: rgb(255,255,255);
+}
+#check{
+  display: none;
+}
+.mask-cover{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top:0;
+  background:rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+#check:checked + .mask-cover{
+  display: block;
 }
