@@ -1,15 +1,23 @@
 @charset "UTF-8";
-*{
+html{
     margin:0;padding:0;
-    font-size:12px;
-    font-family:SimHei;
+    font-size:62.5%;
+    font-family:STHeitiSC;
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size:40%;
+    }
+}
+body{
     background-color:rgb(239,240,244);
+    margin:0;padding:0;
 }
 .main{
     width:100%;
 }
 img{
-    background-color: white;
+    background-color:white;
 }
 .header {
     position:fixed;
@@ -20,31 +28,27 @@ img{
     background-color:rgb(95, 192, 205);
     overflow:hidden;
     text-align: center;
-    vertical-align: middle;
 }
 .text_close{
-    font-size:2rem;
+    font-size:3.2rem;
     background-color: rgb(95, 192, 205);
     color:white;
     display:inline-block;
-    vertical-align : middle;
     padding:0 3%;
     float:left;
 }
 .text_login{
-    font-size:2.25rem;
+    font-size:3.6rem;
     background-color: rgb(95, 192, 205);
     color:white;
     text-align:center;
     display:inline-block;
-    vertical-align : middle;
 }
 .text_register{
-    font-size:2rem;
+    font-size:3.2rem;
     background-color: rgb(95, 192, 205);
     color:white;
     display:inline-block;
-    vertical-align : middle;
     padding:0 3%;
     float:right;
 }
@@ -60,23 +64,23 @@ li{
     background-color:white;
     margin:8px 0;
 }
-
 .pic{
     background-color:white;
-    margin: 2em 0 2em 4%;
-    padding-right: 2.25em;
+    margin: 2rem 0 2rem 4%;
+    padding-right: 2.25rem;
     border-right:2px solid rgb(239,240,244);
     float:left;
     clear:both;
 }
-.inputstlye{
+.input-style{
      background-color:white;
-     font-size:2rem;
-     padding: 1em 4%;
+     font-size:3.6rem;
+     padding: 2rem 4%;
      height:43px;
      border: none;
      clear:both;
      width:65%;
+     outline:none;
  }
 .li_enter{background-color:rgb(239,240,244);}
 .enter{
@@ -84,9 +88,9 @@ li{
     height:72px;
     margin-top:1em;
     background-color: rgb(95, 192, 205);
-    font-size:2.25em;
+    font-size:3.6rem;
     color: white;
-    text-align: center;
+    text-align:center;
     border:0;
 }
 a:link {
@@ -102,8 +106,8 @@ a:hover {
 a:active{
     text-decoration: none;
 }
-.pswforgot{
-    font-size:2rem;
+.psw-forgot{
+    font-size:3.2rem;
     color:rgb(95, 192, 205);
     float:right;
 }

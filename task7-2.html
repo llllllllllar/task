@@ -24,16 +24,16 @@
 </head>
 <body>
   <div class="header">
-      <span class="icon-menu"><img src="task7pic/menu.png" class="img-responsive"></span>
+      <span class="icon-menu"><img src="task7pic/menu.png" class="icon-menu-size"></span>
       <span class="header-text">投票</span>
-      <span class="icon-close"><img src="task7pic/close.png" class="img-responsive"></span>
+      <label class="icon-close" for="check"><img src="task7pic/close.png" class="icon-close-size"></label>
   </div>
-  <div class="main-wrapper">
+  <div class="main-title-wrapper">
     <div class="main-title">
     <span class="title-text">发言讨论结束，大家请投票</span>
     <audio src="task7.mp3" controls="controls" preload id="music" hidden></audio>
       <button class="music-play" onclick="music();">
-      <img src="task7pic/play-circle.png" class="img-responsive music-play-size">
+      <img src="task7pic/play-circle.png" class="music-play-size">
      </button>
   </div>
     <div>
@@ -42,8 +42,10 @@
     </div>
     <span class="subtitle-text">点击得票数最多人的头像</span>
   </div>
-    <div class="main-content">
-    <div class="main-content-box">
+  </div>
+  <div class="main-content container-fluid">
+    <div class="row text-center">
+    <div class="col-xs-4 main-content-box">
         <div class="main-content-text-box text-center">
           <div class="main-content-text">水民</div>
           <div class="main-content-number">1号</div>
@@ -55,7 +57,7 @@
           <div class="main-content-icon-cross icon-size"></div>
         </div>
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">水民</div>
         <div class="main-content-number">2号</div>
@@ -68,7 +70,7 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">警察</div>
         <div class="main-content-number">3号</div>
@@ -81,7 +83,9 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    </div>
+    <div class="row">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">法官</div>
         <div class="main-content-number">4号</div>
@@ -94,7 +98,7 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">狙击手</div>
         <div class="main-content-number">5号</div>
@@ -107,7 +111,7 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">医生</div>
         <div class="main-content-number">6号</div>
@@ -120,7 +124,9 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    </div>
+    <div class="row">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">杀手</div>
         <div class="main-content-number">7号</div>
@@ -133,7 +139,7 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">水民</div>
         <div class="main-content-number">8号</div>
@@ -146,7 +152,7 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">水民</div>
         <div class="main-content-number">9号</div>
@@ -159,7 +165,9 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    </div>
+    <div class="row">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">水民</div>
         <div class="main-content-number">10号</div>
@@ -172,7 +180,7 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">水民</div>
         <div class="main-content-number">11号</div>
@@ -185,7 +193,7 @@
       </div>
 
     </div>
-    <div class="main-content-box">
+    <div class="col-xs-4 main-content-box">
       <div class="main-content-text-box text-center">
         <div class="main-content-text">水民</div>
         <div class="main-content-number">12号</div>
@@ -199,9 +207,20 @@
 
     </div>
     </div>
-  </div>
+    </div>
   <div class="footer navbar-fixed-bottom">
     <button class="btn btn-primary btn-block footer-button" onclick="location.href='task7-3.html'" >投死</button>
+  </div>
+  <input id="check" type="checkbox">
+  <div class="mask-cover">
+    <div class="mask">
+      <div class="text-center">确定要结束本轮游戏吗？</div>
+      <div>
+        <button type="button" class="btn mask-button-left" onclick="location.href='task7-1.html'">确定</button>
+        <button type="button" class="btn mask-button-right" onclick="location.href='task7-2.html'">取消</button>
+      </div>
+    </div>
+    </div>
   </div>
   <script>
     function music(){

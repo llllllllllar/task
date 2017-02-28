@@ -1,73 +1,63 @@
-body{margin:0}
-img {
-    max-width:100%;
-    height:100%;
-}
-.background {
-    background-color:#68CDD5;
-    max-width:40em;width:auto!important;
-    min-height:80em;height:auto!important;
-    margin:0 auto;
-    z-index:0;
-    overflow:auto;
-}
-.part_back{
-    margin:1.6725% 5.3125%;
-    width:auto;!important;
-    height:auto!important;
-    z-index:1;
-}
-.part_title {
-    margin:10.1232% 30.78125%;
-    width:auto!important;
-    height:auto!important;
-    z-index:1
-}
-.part_content{
-    font-size:3vh;
+html{
     font-family:"Adobe Heiti Std";
-    color:#FFFFFF;
-    line-height:1.807;
-    margin:20% 14.0625%;
-    max-width: 28.125em;width:auto!important;
-    height:auto!important;
-    z-index:1;
+    font-size: 62.5%;
+    margin:0
 }
-.logo{
-    display: flex;
-    justify-content: space-between;
+@media screen and (max-width: 768px){
+    html{
+        font-size:35%;
+    }
+}
+body{
+    margin:0;
+    background-color:#68CDD5;
+    overflow:hidden;
+}
+
+.back{
+    margin:1.6725% 5.3125%;
+    width:4vw;min-width:2.7rem;
+}
+.title{
+  padding:0 30%;
+    text-align: center;
+}
+.title-size {
+    margin:0 auto;
+    width:50%;
+    max-width:18.1rem;
+}
+@media screen and (max-width: 768px){
+    .title-size {
+        margin:0 auto;
+        width:6.03rem;
+    }
+}
+.content{
+    display: inline-block;
+    font-size:3rem;
+    color:#FFFFFF;
+    margin:20vh 10%;
+}
+.bottom{
+    margin:0 10%;
 }
 .group{
-    margin:5% 0 5% 7.0625%;
-    padding-left:10%;
-    width:auto!important;
-    height:auto!important;
-    z-index:1;
+    float: left;
+    width:30%;
 }
 .ptteng{
-    margin:5% 7.0625% 5% 0;
-    padding-right:10%;
-    width:auto!important;
-    height:auto!important;
-    z-index:1;
+    float:right;
+    width:30%;
+}
+.icon{
+    text-align: center;
+}
+.icon-size{
+    width:4.8rem
 }
 .text{
-    display:flex;
-    justify-content: space-between;
-}
-.textgroup{
-    font-size:3vh;
-    font-family:"Adobe Heiti Std";
+    font-size:2.4rem;
     color:#FFFFFF;
-    line-height:2.259;
-    margin-left:15%;
-    z-index:1;
-}
-.textptteng {
-    font-size:3vh;
-    font-family:"Adobe Heiti Std";
-    color:#FFFFFF;
-    line-height:2.259;
-    margin-right:15%;
-    z-index:1;
+    text-align: center;
 }
