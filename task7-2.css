@@ -8,6 +8,8 @@ html{
 }
 body{
   background-color: rgb(41,189,224);
+  height:100vh;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 /* 头部样式 */
@@ -23,17 +25,29 @@ body{
   width:5.625vw;max-width: 3.9rem;
 }
 .icon-menu{
+<<<<<<< HEAD
   display:table-cell;
   vertical-align:middle;
+=======
+  float: left;
+  font-size:3.4rem;
+  color:rgb(255,255,255);
+>>>>>>> 53e8e3cd686f7f6d0efcf27577847392ca9419c3
   cursor:pointer;
 }
 .icon-menu-size{
   width:6.09375vw;max-width: 3.9rem;
 }
 .icon-close{
+<<<<<<< HEAD
   display:table-cell;
   vertical-align:middle;
   text-align: right;
+=======
+  float: right;
+  font-size:3.4rem;
+  color:rgb(255,255,255);
+>>>>>>> 53e8e3cd686f7f6d0efcf27577847392ca9419c3
   cursor: pointer;
 }
 .icon-close-size{
@@ -212,6 +226,7 @@ body{
 }
 /* 弹窗遮罩 */
 .mask{
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,15 +251,25 @@ body{
   border-radius:.5rem;
   border-color:rgb(198,198,198);
   font-size: 3.4rem;
+=======
+  position: absolute;
+  top:33vh;
+  left:33vw;
+  padding:10%;
+  background: rgb(255,255,255);
+>>>>>>> 53e8e3cd686f7f6d0efcf27577847392ca9419c3
 }
 #check{
   display: none;
 }
 .mask-cover{
   display: none;
+<<<<<<< HEAD
   align-items: center;
   text-align: center;
   justify-content:center;
+=======
+>>>>>>> 53e8e3cd686f7f6d0efcf27577847392ca9419c3
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -255,5 +280,9 @@ body{
 }
 
 #check:checked + .mask-cover{
+<<<<<<< HEAD
   display: flex;
+=======
+  display: block;
+>>>>>>> 53e8e3cd686f7f6d0efcf27577847392ca9419c3
 }
