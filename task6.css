@@ -13,14 +13,16 @@ html{
 
 .button-height{height:7.5rem;line-height:7.5rem;}
 .list-height{height:8rem;line-height:8rem;}
-.foot-height{height:10rem;line-height:5rem;}
+.foot{display:flex;align-items: center}
+.foot-align{display:flex;align-items:center;text-align: center;justify-content: center;}
+
 
 .border-bottom{border-bottom:.2rem solid #DEE5E7;}
 .border-right{border-right:.2rem solid #DEE5E7;}
 
 .main{padding:13.5rem 0 8rem; overflow: hidden;}
 .content{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.button{white-space:nowrap;text-overflow:ellipsis}
+.button{white-space:nowrap;}
 
 .list-padding{padding:1.3rem 0;}
 .content-padding{padding:1.25rem;}
