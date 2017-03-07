@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+  font-family:微软雅黑;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}
+/* delete the underline of <a> element*/
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/* using the icon-font*/
+.icon-font {
+  width: 2rem; height: 2rem;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;}
+
+/* header */
+.header-wrapper{
+  width:100%;
+}
+
+/* the contact way in header */
+.header-top{
+  padding:1.3rem 18.75%;
+  display: flex;
+  align-items: center;
+}
+.header-top-text{
+  font-size:1.4rem;
+  color:rgb(41,176,120);
+}
+.header-top-icons{
+  color:rgb(41,176,120);
+  font-size:1.4rem;
+}
+
+/* the navigation in header */
+.header-nav{
+  background: rgb(41,176,120);
+  padding:0 18.75%;
+}
+.header-list{
+  list-style-type: none;
+  margin:0;padding:0;
+}
+.header-list-box{
+  padding:4.2rem 1.667%;
+  display: inline-block;
+  border-bottom:5px solid rgba(255,255,255,0);
+}
+.header-list-font{
+  color:rgb(255,255,255);
+  font-size: 1.602rem;
+}
+li.header-list-box:hover{
+  color:rgb(255,255,255);
+  border-bottom:5px solid rgba(255,255,255,1);
+}
+li.header-list-box:active{
+  color:rgb(255,255,255);
+  border-bottom:5px solid rgba(255,255,255,1);
+}

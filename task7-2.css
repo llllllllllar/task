@@ -25,29 +25,23 @@ body{
   width:5.625vw;max-width: 3.9rem;
 }
 .icon-menu{
-<<<<<<< HEAD
   display:table-cell;
   vertical-align:middle;
-=======
   float: left;
   font-size:3.4rem;
   color:rgb(255,255,255);
->>>>>>> 53e8e3cd686f7f6d0efcf27577847392ca9419c3
   cursor:pointer;
 }
 .icon-menu-size{
   width:6.09375vw;max-width: 3.9rem;
 }
 .icon-close{
-<<<<<<< HEAD
   display:table-cell;
   vertical-align:middle;
   text-align: right;
-=======
   float: right;
   font-size:3.4rem;
   color:rgb(255,255,255);
->>>>>>> 53e8e3cd686f7f6d0efcf27577847392ca9419c3
   cursor: pointer;
 }
 .icon-close-size{
