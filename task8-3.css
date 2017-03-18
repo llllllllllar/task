@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* banner */
+.banner{
+  margin-top:14.5rem;
+}
+
+/* content left side */
+.content-left{
+  margin:1rem 3vw 1rem 0;
+  background: rgb(255,255,255);
+}
+.content-left-title{
+  padding-left:40%;
+}
+.content-left-company{
+  padding-left:33.33%;
+}
+.content-logo{
+  float:left;
+  clear: both;
+}
+.content-right{
+  margin-bottom:23.2rem;
+  background: rgb(255,255,255);
+}
+p{
+  text-indent: 2.8rem;
+}

@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+  font-family:微软雅黑;
+}
+
+@media screen and (max-width:768px){
+  html {
+    font-size: 40%;
+    font-family:微软雅黑;
+  }
+
+}
+html,body,ul,li{
+  margin:0;padding:0;
+}
+body{background: rgb(250,250,250);}
+
+/* reset <a> element*/
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/* common font style */
+.font-12px{
+  font-size:1.2rem;
+}
+.font-14px{
+  font-size:1.4rem;
+}
+.font-16px{
+  font-size:1.6rem;
+}
+.font-18px{
+  font-size:1.8rem;
+}
+.font-green{
+  color:rgb(41,176,120);
+}
+.font-white{
+  color:rgb(255,255,255);
+}
+.font-grey{
+  color:rgb(153,153,153);
+}
+.font-red{
+  color:rgb(240,20,0);
+}
+.font-black{
+  color:rgb(51,51,51);
+}
+.font-bold{
+  font-weight:bold;
+}
+/* using the icon-font*/
+.icon-font {
+  width: 2rem; height: 2rem;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+/* margin spacing */
+.line-spacing-1{
+  margin:3rem 0;
+}
+.line-spacing-2{
+  margin:3rem -1.5rem;
+}
+.line-spacing-3{
+  margin:1.5rem -1.5rem;
+}
+.line-spacing-4{
+  margin:0;
+}
+.col-spacing-1{
+  padding:0 1.5rem;
+}
+/* padding spacing */
+.title-spacing{
+  padding:3.2rem 0;
+}
+.subtitle-spacing{
+  padding:2.4rem 0;
+}
+.content-spacing-1{
+  padding:1.6rem 0;
+}
+.content-spacing-2{
+  padding:1.2rem 0;
+}
+.content-spacing-3{
+  padding:1.5rem;
+}
+/* border */
+.border-shadow{
+  border:1px solid rgb(238,237,237);
+  box-shadow: 2px 2px 2px rgb(238,237,237);
+}
+.border{
+  border-bottom: 1px solid rgb(208,214,217);
+}
+/* break-word */
+.word-break{
+  word-wrap: break-word;
+  word-break: normal;
+}
+/* flex layout */
+.flex-parent{
+  display: flex;
+  align-items: center;
+}
+.flex-elements{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* header */
+.header-wrapper{
+  width:100%;
+  background: rgb(255,255,255);
+}
+/* the contact way in header */
+.header-top{
+  padding:1.3rem 18.75%;
+}
+
+/* the navigation in header */
+.header-logo{
+  float: left;
+  padding-top:2.5rem;
+}
+.header-logo-font-1{
+  font-size: 3rem;
+}
+.header-logo-font-2{
+  font-size: .857rem;
+}
+.header-nav{
+  background: rgb(41,176,120);
+  padding:0 18.75%;
+}
+.header-list{padding:0;}
+.header-list-box{
+  padding:4.2rem 1.667% 3.7rem;
+  display: inline-block;
+  list-style: none;
+  border-bottom:5px solid rgba(255,255,255,0);
+}
+.header-list-font{
+  color:rgb(255,255,255);
+  font-size: 1.602rem;
+}
+li.header-list-box:link{
+  color:rgb(255,255,255);
+  border-bottom:5px solid rgba(255,255,255,1);
+}
+li.header-list-box:visited{
+  color:rgb(255,255,255);
+  border-bottom:5px solid rgba(255,255,255,1);
+}
+li.header-list-box:hover{
+  color:rgb(255,255,255);
+  border-bottom:5px solid rgba(255,255,255,1);
+}
+li.header-list-box:active{
+  color:rgb(255,255,255);
+  border-bottom:5px solid rgba(255,255,255,1);
+}
+/* footer */
+.footer-padding{
+  padding:3rem 18.75%
+}
+.footer-bg{
+  background: rgb(38,162,111);
+}
+.footer-list-margin{margin:1rem 1vw 0 0;}
+.footer-list-display{ display: inline;}
+.footer-list-bottom{border-bottom:2px solid rgba(255,255,255,0);}
+li.footer-list-bottom:link{border-bottom:2px solid rgba(255,255,255,1);}
+li.footer-list-bottom:visited{border-bottom:2px solid rgba(255,255,255,1);}
+li.footer-list-bottom:hover{border-bottom:2px solid rgba(255,255,255,1);}
+li.footer-list-bottom:active{border-bottom:2px solid rgba(255,255,255,1);}
+
+.footer-bottom{
+  background: rgb(38,162,111);
+  border-top: 1px solid rgba(255,255,255,0.5);
+}
+/* main */
+.main-wrapper{
+  padding:0 18.75%;
+}
+@media screen and (max-width:1400px ){
+  .header-top{
+    padding:1.3rem 8%;
+  }
+  .header-nav{
+    background: rgb(41,176,120);
+    padding:0 8%;
+  }
+  .main-wrapper{
+    padding:0 8%;
+  }
+  .footer-padding{
+    padding:3rem 8%
+  }
+}
+@media screen and (max-width:1060px ){
+  .header-top{
+    padding:1.3rem 6%;
+  }
+  .header-nav{
+    background: rgb(41,176,120);
+    padding:0 6%;
+  }
+  .main-wrapper{
+    padding:0 6%;
+  }
+  .footer-padding{
+    padding:3rem 6%
+  }
+}
+@media screen and (max-width:768px ){
+  .header-top{
+    padding:1.3rem 5%;
+  }
+  .header-nav{
+    background: rgb(41,176,120);
+    padding:0 5%;
+  }
+  .main-wrapper{
+    padding:0 5%;
+  }
+  .footer-padding{
+    padding:3rem 5%
+  }
+}

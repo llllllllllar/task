@@ -1,71 +1,100 @@
 @charset "utf-8";
 
-html {
-  font-size: 62.5%;
-  font-family:微软雅黑;
+/* the carousel banner */
+.banner{
+  margin-top:14.5rem;
 }
 
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 40%;
-  }
+/* main */
+.main-wrapper{
+  margin-top:14.5rem;
 }
-/* delete the underline of <a> element*/
-a:link{text-decoration:none;}
-a:visited{text-decoration:none;}
-a:active{text-decoration:none;}
-a:hover{text-decoration:none;}
-
-/* using the icon-font*/
-.icon-font {
-  width: 2rem; height: 2rem;
-  vertical-align: middle;
-  fill: currentColor;
-  overflow: hidden;}
-
-/* header */
-.header-wrapper{
-  width:100%;
+.title-margin{
+  margin:10rem 0 7rem;
 }
 
-/* the contact way in header */
-.header-top{
-  padding:1.3rem 18.75%;
-  display: flex;
-  align-items: center;
+.border-dashed{
+  border-right: 2px dashed rgb(222,222,222);
 }
-.header-top-text{
-  font-size:1.4rem;
-  color:rgb(41,176,120);
+.students-amount{
+  margin-left:1vw;
 }
-.header-top-icons{
-  color:rgb(41,176,120);
-  font-size:1.4rem;
+.rocket{
+  width:2.240vw;max-width: 4.3rem;
+}
+.archive{
+  width:3.125vw;max-width: 6rem;
+}
+.resource{
+  width:2.708vw;max-width: 5.2rem;
+}
+/* learning step*/
+.padding-none{
+  padding:0;
+}
+.number-circle{
+  height: 4rem;
+  width:4rem;
+  background:rgb(255,2555,255);
+  border-radius: 50%;
+  text-align: center;
+}
+.icon-arrow{
+  width:1.667vw;max-width: 3.2rem;min-width: 1.6rem;
+}
+/* excellent students */
+.spacing-for-border{
+  margin:0 1px;
+  padding:1vw;
+}
+.portrait-size{
+  width:5.625vw;max-width: 10.8rem;min-width:6rem;
 }
 
-/* the navigation in header */
-.header-nav{
-  background: rgb(41,176,120);
-  padding:0 18.75%;
-}
-.header-list{
-  list-style-type: none;
-  margin:0;padding:0;
-}
-.header-list-box{
-  padding:4.2rem 1.667%;
+/* */
+.circle-activity{
   display: inline-block;
-  border-bottom:5px solid rgba(255,255,255,0);
+  padding: 0.6rem;
+  background-color:rgb(41,176,120);
+  border-radius: 50%;
+  cursor: pointer;
+  list-style: none;
 }
-.header-list-font{
-  color:rgb(255,255,255);
-  font-size: 1.602rem;
+.circle-inactivity{
+  display: inline-block;
+  padding: 0.6rem;
+  background-color:rgb(255,255,255);
+  border-radius: 50%;
+  cursor: pointer;
+  list-style: none;
 }
-li.header-list-box:hover{
-  color:rgb(255,255,255);
-  border-bottom:5px solid rgba(255,255,255,1);
+/* cooperation */
+.coop-company{
+  padding:1.5rem 0;
+  background: rgb(255,255,255);
 }
-li.header-list-box:active{
+/* friend-link */
+.friend-margin{
+  margin:3rem 0 1rem;
+}
+.friend-list{
+  float: left;
+  margin:1rem 1.2vw;
+  border-bottom:2px solid rgba(38,162,111,0);
+}
+li.friend-list:link{
   color:rgb(255,255,255);
-  border-bottom:5px solid rgba(255,255,255,1);
+  border-bottom:2px solid rgba(38,162,111,1);
+}
+li.friend-list:visited{
+  color:rgb(255,255,255);
+  border-bottom:2px solid rgba(38,162,111,1);
+}
+li.friend-list:hover{
+  color:rgb(255,255,255);
+  border-bottom:2px solid rgba(38,162,111,1);
+}
+li.friend-list:active{
+  color:rgb(255,255,255);
+  border-bottom:2px solid rgba(38,162,111,1);
 }
