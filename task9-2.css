@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* main */
+.main-wrapper{
+  margin-top:13.5rem;
+}
+/* title */
+.selected-link{
+  background: rgb(41,176,120);
+}
+.subtitle-link-box{
+  margin:0 1vw;
+  float:left;
+}
+
+/* content */
+.content-box{
+  margin-top:4.7rem;
+  background: rgb(255,255,255);
+}
+.spacing-for-border{
+  margin:0 1px;
+}
+.mask-cover{
+  position:absolute;
+  right:.5rem;
+  bottom:.1rem;
+  height:101%;
+  align-items: center;
+  justify-content:center;
+  background:rgba(0,0,0,0.5);
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius:.5rem;
+  opacity: 0;
+  z-index: 100;
+}
+
+.mask-title{
+  text-align: center;
+  padding-top:8.6rem;
+}
+.mask-content{
+ padding:3.9rem ;
+  text-indent: 3.2rem;
+}
+.mask-cover:hover{
+  opacity: 1;
+}
