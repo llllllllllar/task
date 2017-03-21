@@ -5,7 +5,12 @@
 }
 @media screen and (max-width:768px ){
   .banner{
-    margin-top:13.5rem;
+    margin-top:9.9rem;
+  }
+}
+@media screen and (max-width:315px ){
+  .banner{
+    margin-top:11.5rem;
   }
 }
 /* content left side */
@@ -18,6 +23,13 @@
 }
 .content-left-company{
   padding-left:33.33%;
+}
+.company-dot img{
+  background: rgba(249,163,114,0);
+  margin-right:.5rem
+}
+.company-dot:hover img{
+  background: rgba(249,163,114,1);
 }
 .content-logo{
   float:left;

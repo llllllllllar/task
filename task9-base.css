@@ -129,14 +129,17 @@ a:hover{text-decoration:none;}
 .header-top{
   padding:1.3rem 18.75%;
 }
-
+.header-top-list ul li{display: inline}
+@media screen and (max-width: 768px){
+  .icon-display{display: none}
+}
 /* the navigation in header */
 .header-nav{
   background: rgb(41,176,120);
   padding:0 18.75%;
 }
 .header-home{
-  margin:1.5rem 1% 0 5%;
+  margin:1.5rem 0 0 0;
 }
 .header-logo{
   float:left;
@@ -208,6 +211,9 @@ li.footer-list-bottom:hover{border-bottom:2px solid rgba(255,255,255,1);}
   }
   .header-nav-padding{
     padding:0 5%;
+  }
+  .header-home{
+    margin:1.5rem 0 0 5%;
   }
   .header-list{
     padding:1.5rem;
