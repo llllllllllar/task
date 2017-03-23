@@ -1,0 +1,236 @@
+@charset "UTF-8";
+html{
+  font-size: 62.5%;
+  font-family: 微软雅黑;
+}
+@media screen and (max-width: 768px){
+html{
+  font-size:40%;
+}
+}
+body{
+  margin:0;padding:0;
+}
+/* 字体设置 */
+.font-12px{
+  font-size: 1.2rem;
+}
+.font-14px{
+  font-size: 1.4rem;
+}
+.font-16px{
+  font-size: 1.6rem;
+}
+.font-18px{
+  font-size: 1.8rem;
+}
+.font-22px{
+  font-size: 2.2rem;
+}
+.font-24px{
+  font-size: 2.4rem;
+}
+.font-black{
+  color:rgb(51,51,51)
+}
+.font-white{
+  color:rgb(255,255,255)
+}
+.font-blue{
+  color:rgb(29,122,217)
+}
+.font-orange{
+  color:rgb(255,127,2)
+}
+.font-grey{
+  color:rgb(102,102,102)
+}
+.font-light-grey{
+  color:rgb(204,204,204)
+}
+/* 重置按钮外观 */
+button{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+/* 头部 */
+.header-wrapper{
+  width:100%;
+  display:flex;
+  align-items: center;
+  padding:0 18.75%;
+  background: rgb(29,122,217);
+  position: fixed;
+  top:0;
+}
+.header-left{
+  width:50%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-right{
+  width:50%;
+}
+.button-login {
+  margin:0;
+  padding:1rem .5rem;
+  border-left: solid rgb(255, 255, 255);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  background: rgb(29,122,217);
+  color:rgb(255,255,255);
+}
+.button-register{
+  margin:0;
+  padding:1rem 2rem;
+  border-left: solid rgb(255, 255, 255);
+  border-top: none;
+  border-bottom: none;
+  border-right: solid rgb(255,255,255);
+  background:rgb(255,255,255);
+  color: rgb(29,122,217);
+
+}
+.button-login:hover{
+  transition:all .1s;
+  padding:1rem 2rem;
+  background:rgb(255,255,255);
+  color: rgb(29,122,217);
+}
+/* 导航条 */
+.nav-wrapper{
+  display: inline-block;
+  width:100%;
+  margin-top:3.8rem;
+  background: rgb(249,249,249);
+}
+.nav{
+ float: right;
+  margin-right:18.75vw;
+}
+.button-selected{
+  border-style: none;
+  border-radius: .5rem;
+  background: rgb(29,122,217);
+  color: rgb(255,255,255);
+  padding:1vw;
+  margin:1.5vw;
+}
+.button-unselected{
+  border-radius: .5rem;
+  background: rgb(255,255,255);
+  color: rgb(51,51,51);
+  padding:1vw;
+  margin:1.5vw;
+}
+.button-selected:hover{
+  transition:all .1s;
+  border-style: groove;
+  border-radius: .5rem;
+  background: rgb(255,255,255);
+  color: rgb(51,51,51);
+  padding:1vw;
+  margin:1.5vw;
+}
+.button-unselected:hover{
+  transition:all .1s;
+  border-style: none;
+  border-radius: .5rem;
+  background: rgb(29,122,217);
+  color: rgb(255,255,255);
+  padding:1vw;
+  margin:1.5vw;
+}
+/* 定制纸箱步骤 */
+.step-wrapper{
+  display: inline-block;
+  width:100%;
+  padding-top:2rem;
+}
+.step{
+  float: right;
+  margin-right:18.75vw;
+}
+.step-line-selected{
+  display: inline-block;
+  width:10vw;
+  height:.5rem;
+  background: rgb(255,127,2);
+  border-radius:.5vw;
+  text-align:center ;
+  z-index: 90;
+}
+.step-number-selected{
+  display: inline-block;
+  width:2rem;height:2rem;
+  border-radius: 50%;
+  background: rgb(255,127,2);
+  color:rgb(255,255,255);
+  position: relative;
+  top:-100%;
+  z-index: 100;
+}
+.step-line-unselected{
+  display: inline-block;
+  width:10vw;
+  height:.5rem;
+  margin-left:-1vw;
+  background: rgb(204,204,204);
+  border-radius:.5rem;
+  text-align:center ;
+}
+.step-number-unselected{
+  display: inline-block;
+  width:2rem;height:2rem;
+  border-radius: 50%;
+  background: rgb(204,204,204);
+  color:rgb(255,255,255);
+  position: relative;
+  top:-100%;
+  z-index: 100;
+}
+.step-content-selected{
+  display: inline-block;
+  width:8.28125vw;
+  color: rgb(255,127,2);
+  text-align: center;
+  margin-right:1vw;
+}
+.step-content-unselected{
+  display: inline-block;
+  width:8.28125vw;
+  color: rgb(204,204,204);
+  text-align: center;
+  margin-right:.8vw;
+}
+/* 主体样式 */
+.main-wrapper{
+  margin-top:5.8rem;
+  padding:0 18.75vw;
+}
+.main-title{
+  margin:1.6rem 0;
+  padding-left:1vw;
+  border-left: 3px solid rgb(29,122,217);
+  border-radius:3px;
+}
+.main-subtitle{
+  background: rgb(243,243,243);
+  display: inline-block;
+  vertical-align: middle;
+  width:100%;
+}
+.main-subtitle-content{
+  display: inline-block;
+  vertical-align: middle;
+  margin:1rem 1vw;
+}
+.main-form{
+  display: inline-block;
+  padding:2rem;
+}
