@@ -239,7 +239,6 @@ button,select{
   margin:0 1rem 0 0;
 }
 input[type=radio]+.radio-box {
-  /* your style goes here */
   display: inline-block;
   height: 1.2rem;
   width: 1.2rem;
@@ -300,6 +299,7 @@ main select::-ms-expand { display: none; }
   margin-top:.5rem;
   padding-right:0;
 }
+/* 一些样式需要在不同分辨率下有所不同*/
 @media screen and (max-width:1500px){
   .header-wrapper{
     padding:0 15%;
