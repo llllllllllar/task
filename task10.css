@@ -226,7 +226,8 @@ button,select{
   margin:1rem .5rem;
 }
 .main-content-spacing{
-  margin-top:2rem;
+  margin:2rem 0;
+  padding-left:2rem;
 }
 /* radio样式 */
 .hidden-input {
@@ -258,7 +259,7 @@ input[type=radio]:checked+.radio-box {
 }
 /* input 文本框宽度*/
 .text-box{
-  width:6rem;
+  width:5.9rem;
 }
 /* 查看详情样式 */
 .select1{
@@ -267,6 +268,15 @@ input[type=radio]:checked+.radio-box {
   padding:.5rem 2rem .5rem 1rem;
 }
 main select::-ms-expand { display: none; }
+
+/* “选择箱型”& “选择材质”*/
+.margin-1{
+  margin-top:.5rem;
+}
+/* “确定尺寸”的“查看详情”*/
+.margin-2{
+  margin-top:1.2rem;
+}
 /* “下一步” */
 .next-wrapper{
   margin:6rem 0;
@@ -302,12 +312,15 @@ main select::-ms-expand { display: none; }
   }
 }
 
-@media screen and (max-width:1300px){
+@media screen and (max-width:1400px){
   .header-wrapper{
     padding:0 10%;
   }
   .main-wrapper{
     padding:0 10%;
+  }
+  .text-box{
+    width:5.5vw;
   }
   .footer-top{
     padding:2rem 10%
@@ -320,14 +333,21 @@ main select::-ms-expand { display: none; }
   .main-wrapper{
     padding:0 5%;
   }
-  .text-box{
-    width:4.2rem;
-  }
   .footer-top{
     padding:2rem 5%
   }
 }
-
+@media screen and (max-width:785px){
+  .header-wrapper{
+    padding:0 4%;
+  }
+  .main-wrapper{
+    padding:0 4%;
+  }
+  .footer-top{
+    padding:2rem 4%
+  }
+}
 @media screen and (max-width:768px){
   .header-wrapper{
     padding:0 3%;
@@ -361,5 +381,13 @@ main select::-ms-expand { display: none; }
     position: relative;
     top:-200%;
     z-index: 100;
+  }
+  /* “选择箱型”& “选择材质”*/
+  .margin-1{
+    margin-top:0;
+  }
+  /* “确定尺寸”的“查看详情”*/
+  .margin-2{
+    margin-top:0;
   }
 }
