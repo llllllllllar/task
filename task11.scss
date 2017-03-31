@@ -1,0 +1,135 @@
+@charset "UTF-8";
+$blue: #5FC0CD;
+$white: #FFF;
+$grey: #DDD;
+$light-grey: #EAF0F4;
+$size: 3.6rem !default;
+$full-width: 100%;
+@mixin text{
+  text-align: center;
+  vertical-align: center;
+}
+@mixin base-layout{
+  @include text;
+  display: inline-block;
+  background-color: $blue;
+  color: $white;
+  overflow: hidden;
+}
+@mixin header-text{
+  @include base-layout;
+  padding: 0 3%;
+  font-size: $size/1.125;
+  cursor:pointer;
+}
+@mixin bg-white{
+  background-color:$white;
+}
+html{
+  margin: 0;
+  padding: 0;
+  font-size: (10/16)*100%;
+  font-family: STHeitiSC;
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size: (10/20)*100%;
+  }
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $light-grey;
+}
+.main{
+  width: $full-width;
+}
+img{
+  background-color: $white ;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: $full-width;
+  height: $size*2;
+  line-height: $size*2;
+  @include base-layout;
+}
+.text_close{
+  @include header-text;
+  float: left;
+}
+.text_login{
+  @include base-layout;
+  text-align: center;
+  font-size: $size;
+  cursor: default;
+}
+.text_register{
+  @include header-text;
+  float: right;
+}
+form {
+  ul{
+    overflow: hidden;
+    margin-top: $size*2;
+    padding: 0;
+    width: $full-width;
+    list-style-type: none;
+    @include text;
+    li{
+      margin: .8rem 0;
+      @include bg-white;
+    }
+}
+}
+.pic{
+  float: left;
+  clear: both;
+  border-right: 2px solid $light-grey;
+  margin: 2rem 0 2rem 4%;
+  padding-right: 2.25rem;
+  @include bg-white;
+
+}
+.input-style{
+  border: none;
+  padding: 2rem 4%;
+  height: 4.3rem;
+  clear: both;
+  width: $full-width*0.65;
+  font-size: $size;
+  outline: none;
+  @include bg-white;
+}
+.li_enter{
+  background-color: $light-grey;
+}
+.enter{
+  border: 0;
+  margin-top: 1rem;
+  width: $full-width;
+  height: $size*2;
+  font-size: $size;
+  @include base-layout;
+  cursor:pointer;
+}
+
+a:link {
+  color: $blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: yellowgreen;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.psw-forgot{
+  float: right;
+  font-size: $size;
+  color: $blue;
+}

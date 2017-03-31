@@ -1,0 +1,134 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: STHeitiSC; }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%; } }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EAF0F4; }
+
+.main {
+  width: 100%; }
+
+img {
+  background-color: #FFF; }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7.2rem;
+  line-height: 7.2rem;
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  background-color: #5FC0CD;
+  color: #FFF;
+  overflow: hidden; }
+
+.text_close {
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  background-color: #5FC0CD;
+  color: #FFF;
+  overflow: hidden;
+  padding: 0 3%;
+  font-size: 3.2rem;
+  cursor: pointer;
+  float: left; }
+
+.text_login {
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  background-color: #5FC0CD;
+  color: #FFF;
+  overflow: hidden;
+  text-align: center;
+  font-size: 3.6rem;
+  cursor: default; }
+
+.text_register {
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  background-color: #5FC0CD;
+  color: #FFF;
+  overflow: hidden;
+  padding: 0 3%;
+  font-size: 3.2rem;
+  cursor: pointer;
+  float: right; }
+
+form ul {
+  overflow: hidden;
+  margin-top: 7.2rem;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  vertical-align: center; }
+  form ul li {
+    margin: .8rem 0;
+    background-color: #FFF; }
+
+.pic {
+  float: left;
+  clear: both;
+  border-right: 2px solid #EAF0F4;
+  margin: 2rem 0 2rem 4%;
+  padding-right: 2.25rem;
+  background-color: #FFF; }
+
+.input-style {
+  border: none;
+  padding: 2rem 4%;
+  height: 4.3rem;
+  clear: both;
+  width: 65%;
+  font-size: 3.6rem;
+  outline: none;
+  background-color: #FFF; }
+
+.li_enter {
+  background-color: #EAF0F4; }
+
+.enter {
+  border: 0;
+  margin-top: 1rem;
+  width: 100%;
+  height: 7.2rem;
+  font-size: 3.6rem;
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  background-color: #5FC0CD;
+  color: #FFF;
+  overflow: hidden;
+  cursor: pointer; }
+
+a:link {
+  color: #5FC0CD; }
+
+a:visited {
+  color: purple; }
+
+a:hover {
+  color: yellowgreen; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+.psw-forgot {
+  float: right;
+  font-size: 3.6rem;
+  color: #5FC0CD; }
+
+/*# sourceMappingURL=task11.css.map */
