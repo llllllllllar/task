@@ -1,0 +1,148 @@
+@charset "UTF-8";
+$black: #33330F;
+$white: #FFF;
+$blue: #5FC0CD;
+$red: #E26163;
+$grey: #999;
+$light-grey: #E1E5EA;
+$dark-green: #55A8B3;
+@mixin margin-padding-none{
+  margin:0;
+  padding:0;
+}
+@mixin font-white{
+  color:$white;
+}
+@mixin font-black{
+  color:$black;
+}
+@mixin font-grey{
+  color:$grey;
+}
+@mixin font-red{
+  color:$red;
+}
+@mixin font-blue{
+  color:$blue;
+}
+html{
+  font-size: (10/16)*100%;
+  font-family: STHeitiSC;
+  @include margin-padding-none;
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size: (10/25)*100%;
+  }
+}
+body{
+  @include margin-padding-none;
+  overflow-x: hidden;
+}
+/*
+头部样式
+*/
+header{
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $blue;
+  width: 95%;
+  padding:1rem 3%;
+  position: fixed;
+  top:0;
+  text-align: center;
+  z-index:1;
+  .located{
+    float:right;
+    vertical-align: middle;
+    img{
+      width: 4.2rem;
+    }
+    @media screen and (max-width: 768px){
+      img{
+        width: 3.2rem;;
+      }
+    }
+  }
+  button{
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 3.4rem;
+    padding:.5rem;
+    border-radius: .6rem;
+    cursor: pointer;
+  }
+  .header-button-left{
+    background-color: $dark-green;
+    color: $white;
+    margin-right: -.7%;
+  }
+  .header-button-right{
+    background-color: $white;
+    color: $blue;
+  }
+}
+$border-grey:1px solid $light-grey;
+@mixin inline-block{
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+}
+.nav{
+  position: fixed;
+  top:7rem;
+  width:100%;
+  padding-right:3%;
+  border-bottom: $border-grey;
+  ul {
+    @include inline-block;
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+    li {
+      @include inline-block;
+      @include font-grey;
+      width: 30%;
+      text-align: center;
+      font-size: 2.8rem;
+      span {
+        float: right;
+        span {
+          width: 0;
+          height: 0;
+          border-left: .8rem solid transparent;
+          border-right: .8rem solid transparent;
+          border-top: 1rem solid $grey;
+          position: relative;
+          top: 1rem;
+        }
+        @media screen and (max-width: 768px) {
+          span {
+            width: 0;
+            height: 0;
+            border-left: .6rem solid transparent;
+            border-right: .6rem solid transparent;
+            border-top: .75rem solid $grey;
+            position: relative;
+            top: .8rem;
+          }
+        }
+      }
+      .border-right {
+        border-right: $border-grey;
+      }
+      .border-none {
+        border: none;
+      }
+    }
+  }
+  }
+
+
+@media screen and (max-width: 768px){
+  .nav{
+    position: fixed;
+    top: 5.6rem;
+  }
+}
+

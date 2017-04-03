@@ -1,0 +1,170 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: STHeitiSC;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%; } }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/*
+头部样式
+*/
+header {
+  display: table;
+  vertical-align: middle;
+  background-color: #5FC0CD;
+  width: 100%;
+  padding: 1rem 0 1rem 3%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 1; }
+  header .back {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    width: 5%; }
+    header .back img {
+      width: 3.06vw;
+      max-width: 2.2rem;
+      min-width: 1rem; }
+  header .personal-page {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    font-size: 3.6rem;
+    text-align: center; }
+
+/*
+头像样式
+*/
+.banner {
+  background: url(task5pic/bg.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-top: 5.7rem;
+  padding: 6rem 3%; }
+  .banner .portrait {
+    width: 25%;
+    margin-right: 2%; }
+    .banner .portrait img {
+      width: 23vw;
+      max-width: 16.9rem; }
+  .banner .introduction {
+    color: #FFF;
+    width: 65%; }
+    .banner .introduction .name {
+      font-size: 3.6rem; }
+    .banner .introduction .age {
+      font-size: 2.8rem; }
+    .banner .introduction .address {
+      font-size: 2.4rem; }
+    .banner .introduction img {
+      width: 2.5vw;
+      max-width: 1.8rem;
+      min-width: .9rem; }
+
+@media screen and (max-width: 768px) {
+  .banner {
+    margin-top: 4.2rem; }
+    .banner .portrait {
+      width: 25%;
+      margin-right: 5%; } }
+/*
+“专业技能”样式
+*/
+.content {
+  margin-left: 3%;
+  padding-bottom: 7.33rem; }
+  .content img {
+    width: 3.33%;
+    max-width: 2.4rem;
+    min-width: 1.2rem;
+    vertical-align: middle; }
+  .content .skill {
+    margin: 1.375rem 0;
+    padding: 0 3.889%;
+    font-size: 3.2rem;
+    border-left: 2px solid #5FC0CD;
+    vertical-align: middle; }
+  .content ul, .content li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .content .particulars {
+    width: 100%;
+    padding-left: 4.167%;
+    border-top: 1px solid #E1E5EA;
+    border-bottom: 1px solid #E1E5EA;
+    display: inline-block;
+    vertical-align: middle; }
+  .content .bottom-border {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #E1E5EA; }
+  .content .text-left {
+    display: inline;
+    vertical-align: middle;
+    font-size: 3.2rem;
+    padding: .1% 1rem 0 0;
+    border-right: 1px solid #E1E5EA;
+    color: #999; }
+  .content .text-home {
+    display: inline;
+    vertical-align: middle;
+    font-size: 3.2rem;
+    padding: .1% 1rem 0 0;
+    border-right: 1px solid #E1E5EA;
+    color: #33330F; }
+  .content .text-right {
+    display: inline;
+    vertical-align: middle;
+    padding: 1.5rem 3.611%;
+    font-size: 3.2rem;
+    color: #33330F; }
+  .content .text-price {
+    display: inline;
+    vertical-align: middle;
+    padding: 1.5rem 3.611%;
+    font-size: 3.2rem;
+    color: #E26163; }
+  .content .text-self {
+    display: inline-block;
+    vertical-align: middle;
+    width: 53.472%;
+    font-size: 2.8rem; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 1; }
+  footer button {
+    -webkit-appearance: none;
+    width: 38%;
+    font-size: 3.4rem;
+    padding: 1rem .5rem;
+    border-radius: 1rem;
+    border: solid #5FC0CD;
+    cursor: pointer; }
+  footer .footer-button-left {
+    float: left;
+    margin-left: 3%;
+    background-color: #FFF;
+    color: #5FC0CD; }
+  footer .footer-button-right {
+    float: right;
+    margin-right: 3%;
+    background-color: #5FC0CD;
+    color: #FFF; }
+
+/*# sourceMappingURL=task12-1.css.map */

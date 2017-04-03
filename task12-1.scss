@@ -1,0 +1,239 @@
+@charset "UTF-8";
+$black: #33330F;
+$white: #FFF;
+$blue: #5FC0CD;
+$red: #E26163;
+$grey: #999;
+$light-grey: #E1E5EA;
+
+@mixin margin-padding-none{
+  margin:0;
+  padding:0;
+}
+@mixin font-white{
+  color:$white;
+}
+@mixin font-black{
+  color:$black;
+}
+@mixin font-grey{
+  color:$grey;
+}
+@mixin font-red{
+  color:$red;
+}
+@mixin font-blue{
+  color:$blue;
+}
+html{
+  font-size: (10/16)*100%;
+  font-family: STHeitiSC;
+  @include margin-padding-none;
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size: (10/25)*100%;
+  }
+}
+body{
+  @include margin-padding-none;
+  overflow: hidden;
+}
+/*
+头部样式
+*/
+@mixin header{
+  display: table;
+  vertical-align: middle;
+  background-color: $blue;
+}
+@mixin header-content{
+  display: table-cell;
+  vertical-align: middle;
+  @include font-white;
+}
+header{
+  @include header;
+  width: 100%;
+  padding:1rem 0 1rem 3%;
+  position: fixed;
+  top:0;
+  text-align: center;
+  z-index:1;
+  .back{
+    @include header-content;
+    width:5%;
+    img{
+      width:3.06vw;
+      max-width:2.2rem;
+      min-width: 1rem;
+    }
+  }
+  .personal-page{
+    @include header-content;
+    font-size: 3.6rem;
+    text-align:center;
+  }
+}
+/*
+头像样式
+*/
+@mixin flex-parent{
+  display: flex;
+  align-items: center;
+}
+@mixin flex-child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@mixin bg-main{
+  background:url(task5pic/bg.png) no-repeat;
+  background-size:cover;
+}
+.banner{
+  @include bg-main;
+  @include flex-parent;
+  margin-top:5.7rem;
+  padding:6rem 3%;
+  .portrait{
+    width:25%;
+    margin-right:2%;
+    img{
+      width:23vw;
+      max-width:16.9rem;
+    }
+  }
+  .introduction{
+    @include font-white;
+    width:65%;
+    .name{
+      font-size: 3.6rem;
+    }
+    .age{
+      font-size: 2.8rem;
+    }
+    .address{
+      font-size: 2.4rem;
+    }
+    img{
+      width:2.5vw;
+      max-width: 1.8rem;
+      min-width:.9rem;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .banner{
+    margin-top:4.2rem;
+    .portrait{
+      width:25%;
+      margin-right:5%;
+    }
+  }
+}
+/*
+“专业技能”样式
+*/
+$border-grey:1px solid $light-grey;
+@mixin inline-block{
+  display: inline-block;
+  vertical-align: middle;
+}
+@mixin inline{
+  display: inline;
+  vertical-align: middle;
+}
+.content{
+  padding:0 0 10vw 3%;
+  img{
+    width:3.33%;
+    max-width:2.4rem;
+    min-width: 1.2rem;
+    vertical-align:middle;
+  }
+  .skill {
+    margin: 1.375rem 0;
+    padding: 0 3.889%;
+    font-size: 3.2rem;
+    border-left: 2px solid $blue;
+    vertical-align: middle;
+  }
+  ul,li{
+    list-style: none;
+    @include margin-padding-none;
+  }
+  .particulars{
+    width: 100%;
+    padding-left: 4.167%;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
+    @include inline-block;
+  }
+  .bottom-border{
+    padding:1.5rem 0;
+    border-bottom:$border-grey;
+  }
+  @mixin text-left {
+    @include inline;
+    font-size: 3.2rem;
+    padding: .1% 1rem 0 0;
+    border-right: $border-grey;
+  }
+  .text-left{
+    @include text-left;
+    @include font-grey;
+  }
+  .text-home{
+    @include text-left;
+    @include font-black;
+  }
+  @mixin text-right{
+    @include inline;
+    padding:1.5rem 3.611%;
+    font-size:3.2rem;
+  }
+  .text-right{
+    @include text-right;
+    @include font-black;
+  }
+  .text-price{
+    @include text-right;
+    @include font-red;
+  }
+  .text-self{
+    @include inline-block;
+    width:53.472%;
+    font-size:2.8rem;
+  }
+}
+footer{
+  position:fixed;
+  bottom:0;
+  text-align:center;
+  width:100%;
+  background-color:$white;
+  z-index:1;
+  button{
+    -webkit-appearance: none;
+    width:38%;
+    font-size:3.4rem;
+    padding:1rem .5rem;
+    border-radius:1rem;
+    border: solid $blue;
+    cursor: pointer;
+  }
+  .footer-button-left{
+    background-color: $white;
+    color:$blue;
+    float:left;
+    margin-left:3%;
+  }
+  .footer-button-right{
+    background-color: $blue;
+    color: $white;
+    float: right;
+    margin-right: 3%;
+  }
+}

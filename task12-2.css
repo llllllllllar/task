@@ -1,0 +1,102 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: STHeitiSC;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%; } }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/*
+头部样式
+*/
+header {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #5FC0CD;
+  width: 95%;
+  padding: 1rem 3%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 1; }
+  header .located {
+    float: right;
+    vertical-align: middle; }
+    header .located img {
+      width: 4.2rem; }
+    @media screen and (max-width: 768px) {
+      header .located img {
+        width: 3.2rem; } }
+  header button {
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 3.4rem;
+    padding: .5rem;
+    border-radius: .6rem;
+    cursor: pointer; }
+  header .header-button-left {
+    background-color: #55A8B3;
+    color: #FFF;
+    margin-right: -.7%; }
+  header .header-button-right {
+    background-color: #FFF;
+    color: #5FC0CD; }
+
+.nav {
+  position: fixed;
+  top: 7rem;
+  width: 100%;
+  padding-right: 3%;
+  border-bottom: 1px solid #E1E5EA; }
+  .nav ul {
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%; }
+    .nav ul li {
+      display: inline-block;
+      vertical-align: middle;
+      list-style: none;
+      color: #999;
+      width: 30%;
+      text-align: center;
+      font-size: 2.8rem; }
+      .nav ul li span {
+        float: right; }
+        .nav ul li span span {
+          width: 0;
+          height: 0;
+          border-left: .8rem solid transparent;
+          border-right: .8rem solid transparent;
+          border-top: 1rem solid #999;
+          position: relative;
+          top: 1rem; }
+        @media screen and (max-width: 768px) {
+          .nav ul li span span {
+            width: 0;
+            height: 0;
+            border-left: .6rem solid transparent;
+            border-right: .6rem solid transparent;
+            border-top: 0.75rem solid #999;
+            position: relative;
+            top: .8rem; } }
+      .nav ul li .border-right {
+        border-right: 1px solid #E1E5EA; }
+      .nav ul li .border-none {
+        border: none; }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 5.6rem; } }
+
+/*# sourceMappingURL=task12-2.css.map */
