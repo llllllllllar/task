@@ -54,7 +54,9 @@ header {
   top: 7rem;
   width: 100%;
   padding-right: 3%;
-  border-bottom: 1px solid #E1E5EA; }
+  background-color: #FFF;
+  border-bottom: 1px solid #E1E5EA;
+  z-index: 1; }
   .nav ul {
     display: inline-block;
     vertical-align: middle;
@@ -65,9 +67,9 @@ header {
     .nav ul li {
       display: inline-block;
       vertical-align: middle;
-      list-style: none;
       color: #999;
-      width: 30%;
+      list-style: none;
+      width: 32.5%;
       text-align: center;
       font-size: 2.8rem; }
       .nav ul li span {
@@ -98,5 +100,105 @@ header {
   .nav {
     position: fixed;
     top: 5.6rem; } }
+.main {
+  margin: 12.2rem 0 10rem;
+  padding: 0 0 0 3rem; }
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-top: 9.8rem;
+    padding: 0 1rem; } }
+.content-list {
+  padding: 1.5rem 0; }
+  .content-list div div {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 1.5rem 1.5rem 1.5rem 0; }
+  @media screen and (max-width: 768px) {
+    .content-list div div {
+      margin: .75rem .75rem .75rem 0; } }
+  .content-list .service {
+    color: #999;
+    font-size: 2.8rem; }
+    .content-list .service img {
+      width: 2.4rem; }
+    @media screen and (max-width: 768px) {
+      .content-list .service img {
+        width: 1.2rem; } }
+  .content-list .date-price {
+    margin-left: 4.2rem;
+    width: 95%; }
+  @media screen and (max-width: 768px) {
+    .content-list .date-price {
+      margin-left: 2.2rem; } }
+  .content-list .date {
+    color: #33330F;
+    width: 50%;
+    margin: 0;
+    font-size: 2.8rem; }
+  .content-list .price {
+    color: #E26163;
+    font-size: 3rem;
+    margin: 0 1rem 0 0;
+    float: right; }
+    .content-list .price div {
+      position: relative;
+      top: -.5rem;
+      margin: 0; }
+      .content-list .price div img {
+        position: relative;
+        top: .3rem;
+        width: 2.64vw;
+        max-width: 1.9rem;
+        min-width: .95rem; }
+  .content-list .address {
+    color: #999;
+    font-size: 2.6rem; }
+    .content-list .address img {
+      width: 1.9rem; }
+    @media screen and (max-width: 768px) {
+      .content-list .address img {
+        width: .95rem; } }
+
+footer {
+  display: inline-block;
+  vertical-align: middle;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #FFF;
+  z-index: 1; }
+
+.footer-index {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+  color: #5FC0CD;
+  font-size: 2rem; }
+  .footer-index img {
+    width: 6.38vw;
+    max-width: 4.6rem; }
+
+.footer-write {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%; }
+  .footer-write img {
+    width: 13vw;
+    max-width: 9.4rem; }
+
+.footer-person {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+  color: #999;
+  font-size: 2rem; }
+  .footer-person img {
+    width: 5.83vw;
+    max-width: 4.2rem; }
 
 /*# sourceMappingURL=task12-2.css.map */
