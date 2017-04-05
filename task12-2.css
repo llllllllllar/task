@@ -108,6 +108,9 @@ header {
   .main {
     margin-top: 9.8rem;
     padding: 0 1rem; } }
+a {
+  text-decoration: none; }
+
 .content-list {
   padding: 1.5rem 0; }
   .content-list div div {

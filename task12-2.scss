@@ -48,6 +48,7 @@ body{
   @include margin-padding-none;
   overflow-x: hidden;
 }
+
 /*
 头部样式
 */
@@ -161,7 +162,9 @@ $border-grey:1px solid $light-grey;
     padding:0 1rem;
   }
 }
-
+a{
+  text-decoration:none;
+}
 .content-list{
    padding:1.5rem 0;
   div{
