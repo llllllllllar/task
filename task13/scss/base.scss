@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+@mixin margin-padding-none{
+  margin:0;
+  padding:0;
+}
+html{
+  font-size: 62.5%;
+  font-family: STHeitiSC Light,serif;
+  @include margin-padding-none;
+}
+@media screen and (max-width:768px){
+  html{
+    font-size: 40%;
+  }
+}
+body{
+  width:100%;
+  max-width: 720px;
+  margin:0 auto;
+  padding:0;
+}
+ul,li{
+  @include margin-padding-none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.page{
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin:0 auto;
+}
+.icon-font{
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

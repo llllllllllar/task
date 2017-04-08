@@ -1,0 +1,141 @@
+@charset "UTF-8";
+$tundora: rgb(70,70,70);
+$emperor: rgb(81,81,81);
+$scorpion: rgb(86,86,86);
+$boulder: rgb(120,120,120);
+$dusty-gray: rgb(154,154,154);
+$silver-chalice: rgb(166,166,166);
+$silver: rgb(201,201,201);
+$alto: rgb(208,208,208);
+$gallery: rgb(240,240,240);
+$white: rgb(255,255,255);
+$scooter: rgb(41,189,224);
+$turquoise-blue: rgb(105,209,233);
+$ice-cold: rgb(185,233,245);
+$cape-honey: rgb(253,225,174);
+$golden-sand: rgb(245,201,123);
+$yellow-orange: rgb(251,180,53);
+$golden-tainoi: rgb(255,200,101);
+$froly: rgb(246,111,111);
+$acapulco:rgb(131,176,154);
+$font-size--primary: 3.484rem;
+$font-size--large: $font-size--primary*1.083;
+$font-size--small: $font-size--primary*0.921;
+$font-size--x-small: $font-size--primary*0.704;
+@mixin inline-block{
+  display: inline-block;
+  vertical-align: middle;
+}
+@mixin border--dusty-gray{
+  border: 1px solid $dusty-gray;
+}
+@mixin content--margin-top{
+  margin-top: 2.8rem;
+}
+.page{
+  background-color: $gallery;
+}
+.menu{
+  padding: 2.1rem 1.9rem;
+  background-color: $scooter;
+}
+.menu__icon{
+  color: $white;
+  font-size: $font-size--small;
+}
+.main{
+  padding: 0 1.75rem;
+}
+.main__top{
+  @include border--dusty-gray;
+  margin-top: 1.3rem;
+  background-color: $white;
+}
+.pre-game__text{
+  @include inline-block;
+  width: 90%;
+  padding:2rem 0;
+  color: $dusty-gray;
+  text-align: center;
+  font-size: $font-size--primary;
+}
+.pre-game__icon_right{
+  @include inline-block;
+  margin-right: .7rem;
+  padding: 2rem 0;
+  float: right;
+  &--active{
+    color: $gallery;
+    font-size: $font-size--primary;
+  }
+}
+.main__bottom{
+  @include border--dusty-gray;
+  margin-top: 1.25rem;
+  background-color: $white;
+}
+.title{
+  border-bottom: 1px solid $cape-honey;
+  padding: 1.4rem 0;
+  color: $yellow-orange;
+  text-align: center;
+  font-size: $font-size--large;
+}
+.content {
+  width: 100%;
+  text-align: center;
+  &__item{
+    @include content--margin-top;
+  }
+  &__button {
+    padding: 2.5rem 28.4375%;
+    background-color: $turquoise-blue;
+    color: $white;
+    font-size: $font-size--small;
+  }
+  &__text{
+    @include content--margin-top;
+    color: $boulder;
+    font-size: $font-size--x-small;
+  }
+}
+.content__icon_right{
+  float: right;
+  &--active{
+    position: relative;
+    top: 4.3rem;
+    right: 1vw;
+  }
+}
+.content__icon_right--size{
+  width: 2.8rem;
+}
+@media screen and (max-width: 640px){
+  .content__icon_right--size{
+    width: 2rem;
+  }
+}
+.button-icon--position{
+  position: relative;
+  left: 1.4rem;
+}
+@media screen and (max-width: 640px){
+  .specify-position{
+    position: relative;
+    left: 1rem;
+  }
+}
+.carousel{
+  @include inline-block;
+  margin: 1.35rem 0 1.35rem 40%;
+  &__item{
+    @include inline-block;
+    font-size: $font-size--x-small;
+    &--active{
+      color: $turquoise-blue;
+    }
+    &--inactive{
+      color: $gallery;
+    }
+  }
+}
