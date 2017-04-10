@@ -1,0 +1,184 @@
+.page {
+  background-color: #29bde0; }
+
+.header {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  background-color: #29bde0;
+  text-align: center;
+  z-index: 1; }
+
+.header__icon-left {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem;
+  float: left;
+  cursor: pointer; }
+  .header__icon-left--size {
+    width: 6.094vw;
+    max-width: 3.9rem;
+    min-width: 1.95rem; }
+  @media screen and (max-width: 640px) {
+    .header__icon-left--size {
+      margin-top: 1rem; } }
+
+.header__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem;
+  line-height: 4rem;
+  color: white;
+  font-size: 3.399rem; }
+
+.header__icon-right {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem;
+  float: right;
+  cursor: pointer; }
+  .header__icon-right--size {
+    width: 5.625vw;
+    max-width: 3.6rem;
+    min-width: 1.8rem; }
+  @media screen and (max-width: 640px) {
+    .header__icon-right--size {
+      margin-top: 1rem; } }
+
+.main {
+  background-color: #29bde0;
+  margin-top: 6rem;
+  padding-bottom: 12rem; }
+  .main__top {
+    padding-top: 1rem; }
+
+.title {
+  padding: 1rem;
+  background-color: #b9e9f5; }
+  .title__text {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem 5%;
+    font-size: 2.601rem;
+    color: #515151; }
+
+.music__button {
+  border: none;
+  background: transparent;
+  float: right; }
+
+.music__icon_play--size {
+  width: 100%;
+  max-width: 5.2rem; }
+
+@media screen and (max-width: 768px) {
+  .music__icon_play--size {
+    margin-top: -.5em; } }
+.sub-title__icon_triangle {
+  position: relative;
+  left: 9%; }
+
+.subtitle__text {
+  margin-left: 9%;
+  font-size: 2.4rem;
+  color: white; }
+
+.main__bottom {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1rem;
+  width: 100%; }
+
+.vote {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28.8%;
+  margin: 1.5rem 0 0 3%;
+  text-align: center; }
+  .vote__box {
+    border: 3px solid white;
+    cursor: pointer; }
+  .vote__role {
+    padding: 25% 0;
+    background-color: #f5c97b;
+    font-size: 3rem;
+    color: #565656; }
+  .vote__number {
+    background-color: #83b09a;
+    font-size: 2.277rem;
+    color: white; }
+  .vote__icon {
+    margin: .5rem auto;
+    padding: 0;
+    opacity: 0; }
+    .vote__icon--knife {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20%;
+      max-width: 3rem;
+      height: 3rem;
+      background-size: 400%;
+      background-image: url("../img/icon.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background-position: 0 0; }
+    .vote__icon--magnifier {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20%;
+      max-width: 3rem;
+      height: 3rem;
+      background-size: 400%;
+      background-image: url("../img/icon.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background-position: 33.333% 0; }
+    .vote__icon--aim {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20%;
+      max-width: 3rem;
+      height: 3rem;
+      background-size: 400%;
+      background-image: url("../img/icon.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background-position: 66.667% 0; }
+    .vote__icon--cross {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20%;
+      max-width: 3rem;
+      height: 3rem;
+      background-size: 400%;
+      background-image: url("../img/icon.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background-position: 100% 0; }
+
+.vote:hover .vote__icon {
+  opacity: 1; }
+
+.footer {
+  background-color: #29bde0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  z-index: 1; }
+
+.vote__button {
+  margin: 2.1rem 11.25%;
+  padding: 1.2rem 0;
+  width: 76.56%;
+  text-align: center;
+  background-color: #fbb435;
+  font-size: 3.999rem;
+  color: white; }
+
+/*# sourceMappingURL=task13-2.css.map */

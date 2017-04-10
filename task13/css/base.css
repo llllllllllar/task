@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  font-family: STHeitiSC Light,serif;
+  font-family: SimHei;
   margin: 0;
   padding: 0; }
 
@@ -8,9 +8,7 @@ html {
   html {
     font-size: 40%; } }
 body {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0; }
 
 ul, li {

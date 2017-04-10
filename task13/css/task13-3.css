@@ -1,0 +1,135 @@
+.header {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  background-color: #29bde0;
+  text-align: center;
+  z-index: 1; }
+
+.header__icon-left {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem;
+  float: left;
+  cursor: pointer; }
+  .header__icon-left--size {
+    width: 6.094vw;
+    max-width: 3.9rem;
+    min-width: 1.95rem; }
+  @media screen and (max-width: 640px) {
+    .header__icon-left--size {
+      margin-top: 1rem; } }
+
+.header__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem;
+  line-height: 4rem;
+  color: white;
+  font-size: 3.3rem; }
+
+.header__icon-right {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem;
+  float: right;
+  cursor: pointer; }
+  .header__icon-right--size {
+    width: 5.625vw;
+    max-width: 3.6rem;
+    min-width: 1.8rem; }
+  @media screen and (max-width: 640px) {
+    .header__icon-right--size {
+      margin-top: 1rem; } }
+
+.main {
+  margin-top: 6rem;
+  padding-bottom: 12rem; }
+  .main__top {
+    background-color: #29bde0;
+    padding: 2rem 12.7815%; }
+
+.game-result__img {
+  text-align: center; }
+  .game-result__img--size {
+    width: 54.84%;
+    max-width: 35.1rem; }
+.game-result__text--state {
+  font-size: 3.3rem;
+  color: #ffc865; }
+
+.game-details {
+  margin-top: 3rem;
+  font-size: 2.601rem;
+  color: white; }
+  .game-details__time-cost {
+    margin-top: 1rem; }
+  .game-details__role {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1rem; }
+    .game-details__role div {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1rem; }
+  .game-details__word {
+    margin-top: 1rem; }
+
+.game-process {
+  padding: 1rem 12.7815% 2rem;
+  border-bottom: 1px solid #d0d0d0; }
+  .game-process__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 3rem;
+    color: #515151; }
+  .game-process__sub-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: .6rem;
+    float: right;
+    font-size: 2.001rem;
+    color: #c9c9c9; }
+  .game-process__content {
+    margin-top: 1rem;
+    font-size: 2.601rem;
+    color: #a6a6a6; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  z-index: 1;
+  background-color: rgba(41, 189, 224, 0.5); }
+
+.game-again__button {
+  width: 40%;
+  text-align: center;
+  margin: 5%;
+  padding: 1rem 0;
+  font-size: 3.999rem;
+  color: white;
+  border-radius: .5rem;
+  float: left;
+  background-color: #f66f6f;
+  border-color: #f66f6f; }
+
+.game-share__button {
+  width: 40%;
+  text-align: center;
+  margin: 5%;
+  padding: 1rem 0;
+  font-size: 3.999rem;
+  color: white;
+  border-radius: .5rem;
+  float: right;
+  background-color: #fbb435;
+  border-color: #fbb435; }
+
+/*# sourceMappingURL=task13-3.css.map */

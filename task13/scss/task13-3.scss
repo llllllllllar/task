@@ -1,0 +1,174 @@
+@charset "UTF-8";
+$tundora: rgb(70,70,70);
+$emperor: rgb(81,81,81);
+$scorpion: rgb(86,86,86);
+$boulder: rgb(120,120,120);
+$dusty-gray: rgb(154,154,154);
+$silver-chalice: rgb(166,166,166);
+$silver: rgb(201,201,201);
+$alto: rgb(208,208,208);
+$gallery: rgb(240,240,240);
+$white: rgb(255,255,255);
+$scooter: rgb(41,189,224);
+$turquoise-blue: rgb(105,209,233);
+$ice-cold: rgb(185,233,245);
+$cape-honey: rgb(253,225,174);
+$golden-sand: rgb(245,201,123);
+$yellow-orange: rgb(251,180,53);
+$golden-tainoi: rgb(255,200,101);
+$froly: rgb(246,111,111);
+$acapulco:rgb(131,176,154);
+$font-size--primary: 3rem;
+$font-size--xx-large: $font-size--primary*1.333;
+$font-size--x-large: $font-size--primary*1.133;
+$font-size--large: $font-size--primary*1.1;
+$font-size--small: $font-size--primary*0.867;
+$font-size--x-small: $font-size--primary*0.667;
+@mixin inline-block{
+  display: inline-block;
+  vertical-align: middle;
+}
+@mixin bg-scooter{
+  background-color: $scooter;
+}
+.header{
+  @include inline-block;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  @include bg-scooter;
+  text-align: center;
+  z-index: 1;
+}
+.header__icon-left{
+  @include inline-block;
+  margin: 1rem;
+  float: left;
+  cursor: pointer;
+  &--size{
+    width: 6.094vw;
+    max-width: 3.9rem;
+    min-width: 1.95rem;
+  }
+  @media screen and (max-width: 640px){
+    &--size{
+      margin-top: 1rem;
+    }
+  }
+}
+.header__text{
+  @include inline-block;
+  margin: 1rem;
+  line-height: 4rem;
+  color: $white;
+  font-size: $font-size--large;
+}
+.header__icon-right{
+  @include inline-block;
+  margin: 1rem;
+  float: right;
+  cursor: pointer;
+  &--size{
+    width: 5.625vw;
+    max-width: 3.6rem;
+    min-width: 1.8rem;
+  }
+  @media screen and (max-width: 640px){
+    &--size{
+      margin-top: 1rem;
+    }
+  }
+}
+.main{
+  margin-top: 6rem;
+  padding-bottom: 12rem;
+  &__top{
+    @include bg-scooter;
+    padding: 2rem 12.7815%;
+  }
+}
+.game-result{
+  &__img{
+  text-align: center;
+    &--size{
+      width: 54.84%;
+      max-width: 35.1rem;
+    }
+  }
+  &__text--state{
+    font-size: $font-size--large;
+    color: $golden-tainoi;
+  }
+}
+.game-details{
+  margin-top: 3rem;
+  font-size: $font-size--small;
+  color: $white;
+  &__time-cost{
+    margin-top: 1rem;
+  }
+  &__role{
+    @include inline-block;
+    margin-top: 1rem;
+    div{
+      @include inline-block;
+      margin-right: 1rem;
+    }
+  }
+  &__word{
+    margin-top: 1rem;
+  }
+}
+.game-process{
+  padding:1rem 12.7815% 2rem;
+  border-bottom: 1px solid $alto;
+  &__title{
+    @include inline-block;
+    font-size: $font-size--primary;
+    color: $emperor;
+  }
+  &__sub-title{
+    @include inline-block;
+    margin-top: .6rem;
+    float: right;
+    font-size: $font-size--x-small;
+    color: $silver;
+  }
+  &__content{
+    margin-top: 1rem;
+    font-size: $font-size--small;
+    color: $silver-chalice;
+  }
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  z-index: 1;
+  background-color: rgba(41,189,224,0.5);
+}
+@mixin footer-button{
+  width: 40%;
+  text-align: center;
+  margin: 5%;
+  padding: 1rem 0;
+  font-size: $font-size--xx-large;
+  color: $white;
+  border-radius: .5rem;
+}
+.game-again__button{
+  @include footer-button;
+  float: left;
+  background-color: $froly;
+  border-color: $froly;
+}
+.game-share__button{
+  @include footer-button;
+  float: right;
+  background-color: $yellow-orange;
+  border-color: $yellow-orange;
+}

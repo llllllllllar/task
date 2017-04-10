@@ -65,25 +65,25 @@
 
 .content__icon_right {
   float: right; }
-  .content__icon_right--active {
-    position: relative;
-    top: 4.3rem;
-    right: 1vw; }
-
-.content__icon_right--size {
-  width: 2.8rem; }
-
-@media screen and (max-width: 640px) {
   .content__icon_right--size {
-    width: 2rem; } }
+    position: relative;
+    right: 1rem;
+    top: 6rem;
+    width: 0;
+    height: 0;
+    border-top: 1.75rem solid transparent;
+    border-bottom: 1.75rem solid transparent;
+    border-left: 2rem solid #fbb435; }
+  @media screen and (max-width: 768px) {
+    .content__icon_right--size {
+      position: relative;
+      right: 1rem;
+      top: 5rem; } }
+
 .button-icon--position {
   position: relative;
-  left: 1.4rem; }
+  left: 1rem; }
 
-@media screen and (max-width: 640px) {
-  .specify-position {
-    position: relative;
-    left: 1rem; } }
 .carousel {
   display: inline-block;
   vertical-align: middle;

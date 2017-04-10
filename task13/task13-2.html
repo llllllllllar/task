@@ -2,14 +2,196 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!--[if IE]>
-    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <![endif]-->
-    <title>task13-1</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/task13-2.css">
+    <title>task13-2</title>
 </head>
 <body>
-
+  <div class="page">
+    <div class="header">
+      <div class="header__icon-left"><img src="img/menu.png" class="header__icon-left--size"></div>
+      <div class="header__icon-right"><img src="img/close.png" class="header__icon-right--size"></div>
+      <div class="header__text">投票</div>
+    </div>
+    <div class="main">
+      <div class="main__top">
+        <div class="title">
+          <span class="title__text">发言结束，大家请投票</span>
+          <audio src="task13.mp3" controls="controls" preload id="music" hidden></audio>
+          <button class="music__button" onclick="music();">
+            <img src="img/play-circle.png" class="music__icon_play--size">
+          </button>
+        </div>
+        <div class="sub-title">
+          <div class="sub-title__icon_triangle">
+            <img src="img/triangle.png">
+          </div>
+          <span class="subtitle__text">点击得票数最多人的头像</span>
+        </div>
+      </div>
+      <div class="main__bottom">
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">水民</div>
+            <div class="vote__number">1号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">水民</div>
+            <div class="vote__number">2号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">警察</div>
+            <div class="vote__number">3号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">法官</div>
+            <div class="vote__number">4号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">狙击手</div>
+            <div class="vote__number">5号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">医生</div>
+            <div class="vote__number">5号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">杀手</div>
+            <div class="vote__number">7号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">水民</div>
+            <div class="vote__number">8号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">水民</div>
+            <div class="vote__number">9号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">水民</div>
+            <div class="vote__number">10号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">水民</div>
+            <div class="vote__number">11号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="vote__box">
+            <div class="vote__role">水民</div>
+            <div class="vote__number">12号</div>
+          </div>
+          <div class="vote__icon">
+            <div class="vote__icon--knife"></div>
+            <div class="vote__icon--magnifier"></div>
+            <div class="vote__icon--aim"></div>
+            <div class="vote__icon--cross"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="task13-3.html"><button class="vote__button">投死</button></a>
+    </div>
+  </div>
+  <script>
+      function music(){
+          var audio = document.getElementById('music');
+          if(audio.paused){
+              audio.play();//audio.play();// 播放
+          }
+          else{
+              audio.pause();// 暂停
+          }
+      }
+  </script>
 </body>
 </html>
