@@ -46,7 +46,7 @@ $font-size--xx-small: $font-size--primary*0.759;
   text-align: center;
   z-index: 1;
 }
-.header__icon-left{
+.header__icon_left{
   @include inline-block;
   margin: 1rem;
   float: left;
@@ -69,7 +69,7 @@ $font-size--xx-small: $font-size--primary*0.759;
   color: $white;
   font-size: $font-size--large;
 }
-.header__icon-right{
+.header__icon_right{
   @include inline-block;
   margin: 1rem;
   float: right;

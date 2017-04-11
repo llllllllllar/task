@@ -13,18 +13,18 @@
   text-align: center;
   z-index: 1; }
 
-.header__icon-left {
+.header__icon_left {
   display: inline-block;
   vertical-align: middle;
   margin: 1rem;
   float: left;
   cursor: pointer; }
-  .header__icon-left--size {
+  .header__icon_left--size {
     width: 6.094vw;
     max-width: 3.9rem;
     min-width: 1.95rem; }
   @media screen and (max-width: 640px) {
-    .header__icon-left--size {
+    .header__icon_left--size {
       margin-top: 1rem; } }
 
 .header__text {
@@ -35,18 +35,18 @@
   color: white;
   font-size: 3.399rem; }
 
-.header__icon-right {
+.header__icon_right {
   display: inline-block;
   vertical-align: middle;
   margin: 1rem;
   float: right;
   cursor: pointer; }
-  .header__icon-right--size {
+  .header__icon_right--size {
     width: 5.625vw;
     max-width: 3.6rem;
     min-width: 1.8rem; }
   @media screen and (max-width: 640px) {
-    .header__icon-right--size {
+    .header__icon_right--size {
       margin-top: 1rem; } }
 
 .main {
